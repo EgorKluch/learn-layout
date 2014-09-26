@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>National Geographic</title>
+
+  <script src="../lib/jquery.min.js"></script>
+  <script src="./js/search.js"></script>
+
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div class="page">
     <div class="header">
       <div class="logo"></div>
-      <div class="search">
-        <span class="search_request">Search</span>
-        <div class="search_category">All categories</div>
-        <!-- @TODO: Why .search_go without symbols showing uncorrectly?! -->
+      <div class="search" id="headerSearch">
+        <input class="search_request" placeholder="Search">
+        <div class="search_category_labelContainer">
+          <div class="search_category_label">All categories</div>
+        </div>
+        <!-- @TODO: Почему необходимо обязательно добавить пробел? -->
         <div class="search_go">&nbsp;</div>
       </div>
       <div class="loginForm"></div>
