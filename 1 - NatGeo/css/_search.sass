@@ -1,0 +1,44 @@
+.search
+  @include hideSpaces()
+  width: 400px
+  height: 25px
+  background: white url(../img/search_icon.png) no-repeat 9px
+  box-shadow: 0 0 1px rgba(0,0,0,0.3)
+  border-radius: 2px
+  padding: 12px 0 11px 42px
+  line-height: 25px
+  font-family: "Myriad Pro"
+  font-size: 15px
+  overflow: hidden
+
+.search_request
+  display: inline-block
+  width: 218px
+  font-style: italic
+  color: #e7e7e7
+
+$searchCategoryWidth: 126px
+$searchCategoryPaddingLeft: 12px
+$searchCategoryIconWidth: 18px
+$searchCategoryIconPosition: $searchCategoryWidth + $searchCategoryPaddingLeft - $searchCategoryIconWidth - 10
+.search_category
+  display: inline-block
+  border-right: 1px solid #eaeaea
+  border-left: 1px solid #eaeaea
+  background: url(../img/search_category_down.png) no-repeat $searchCategoryIconPosition
+  padding: 0 0 0 $searchCategoryPaddingLeft
+  color: #cacaca
+  height: 25px
+  width: $searchCategoryWidth
+
+.search_category_content
+  display: inline-block
+  height: 25px
+
+  background-color: red
+
+.search_go
+  display: inline-block
+  width: 31px
+  height: 25px
+  background: url(../img/search_go.png) no-repeat 9px center

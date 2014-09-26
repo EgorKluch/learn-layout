@@ -1,0 +1,14 @@
+=placeholder($selector: '*')
+  #{$selector}::-webkit-input-placeholder
+    @content
+  #{$selector}:-moz-placeholder
+    @content
+  #{$selector}::-moz-placeholder
+    @content
+  #{$selector}:-ms-input-placeholder
+    @content
+
+=hideSpaces ($normalSpacing: 'normal')
+  letter-spacing: -0.3em
+  > *
+    letter-spacing: #{$normalSpacing}
