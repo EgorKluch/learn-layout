@@ -71,21 +71,46 @@ $searchCategoryIconPosition: $searchCategoryWidth + $searchCategoryPaddingLeft -
   background-color: white
 
 .search_category_selectAll
-  outline: 0
-  border: 1px solid #EAEAEA
-
-.search_category_selectAllLabel
+  @extend .disableSelectText
+  cursor: pointer
+  margin-top: 11px
+  margin-left: 5px
+  padding-left: 25px
+  background: url(../img/search_category_selectAllUnchecked.png) no-repeat left center
   color: #CCC
   font-size: 14px
 
-.search_category_item
-  height: 34px
+  &.checked
+    background-image: url(../img/search_category_selectAllChecked.png)
+
+.search_category_list
+  margin: 11px 0
+  padding: 0
   width: 140px
+  float: left
+
+  &:first-child
+    padding-left: 4px
+    padding-right: 3px
+
+  &:nth-child(2)
+    border-left: 1px solid #E9E9E9
+    border-right: 1px solid #E9E9E9
+    padding: 0 3px
+
+  &:last-child
+    padding-left: 3px
+    padding-right: 4px
+
+.search_category_listItem
+  @extend .disableSelectText
+  height: 34px
   background: #ECECEC url(../img/search_category_x.png) no-repeat 8px
   line-height: 34px
   padding-left: 30px
   list-style: none
   color: #999
+  cursor: pointer
 
   &:nth-child(odd)
     background-color: #F4F4F4
@@ -93,8 +118,11 @@ $searchCategoryIconPosition: $searchCategoryWidth + $searchCategoryPaddingLeft -
   &.bordered
     border-top: 1px solid #DDD
     border-left: 1px solid #DDD
-    width: 139px
+    width: 109px
     height: 33px
+
+  &.bordered.selected
+    width: 110px
 
   &.selected
     border: none
