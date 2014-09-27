@@ -1,24 +1,22 @@
 @import "mixins"
 
+$pageColor: #FBFBFB
+$pageWidth: 940px
+
 body
   border: 0
   margin: 0
   padding: 0
+  overflow-y: scroll
 
-.page
-  background-color: #fbfbfb
-  padding: 39px 40px 12px
+.block_page
+  background-color: $pageColor
 
-.header
-  @include hideSpaces()
+.page_container
+  position: absolute
+  left: 50%
+  width: $pageWidth
+  margin-left: -$pageWidth / 2
+  padding: 0 40px
 
-.logo, .search
-  display: inline-block
-
-.logo
-  width: 162px
-  height: 48px
-  background-image: url(../img/logo.png)
-  margin-right: 149px
-
-@import "search"
+@import "header"

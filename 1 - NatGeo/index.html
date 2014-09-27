@@ -10,16 +10,41 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <div class="page">
-    <div class="header">
-      <div class="logo"></div>
-      <div class="search" id="headerSearch">
-        <input class="search_request" placeholder="Search">
-        <div class="search_category_labelContainer">
-          <div class="search_category_label">All categories</div>
+  <div class="block_page">
+    <div class="block_header">
+      <div class="page_container">
+        <div class="block_logo"></div>
+        <div class="block_search" id="search">
+          <input class="search_input" placeholder="Search">
+          <div class="search_category">
+            <div class="search_category_labelContainer">
+              <div class="search_category_label">All categories</div>
+            </div>
+            <div class="search_category_listContainer" id="searchCategories">
+              <input type="checkbox" class="search_category_selectAll">
+              <label class="search_category_selectAllLabel">Select all categories to search</label>
+              <ul class="search_category_list">
+                <li class="search_category_listItem bordered selected">Videos</li>
+                <li class="search_category_listItem bordered">Photography</li>
+                <li class="search_category_listItem bordered">Animals</li>
+                <li class="search_category_listItem">Games</li>
+              </ul>
+              <ul class="search_category_list">
+                <li class="search_category_listItem">Environment</li>
+                <li class="search_category_listItem">Travel</li>
+                <li class="search_category_listItem">Kids</li>
+                <li class="search_category_listItem">Adventurer</li>
+              </ul>
+              <ul class="search_category_list">
+                <li class="search_category_listItem bordered">Television</li>
+                <li class="search_category_listItem bordered">Apps</li>
+                <li class="search_category_listItem bordered">Events</li>
+                <li class="search_category_listItem">Trips</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search_go"></div>
         </div>
-        <!-- @TODO: Почему необходимо обязательно добавить пробел? -->
-        <div class="search_go">&nbsp;</div>
       </div>
       <div class="loginForm"></div>
     </div>
