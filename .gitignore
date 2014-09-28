@@ -1,2 +1,5 @@
 .idea
 etc
+
+**/*.map
+**/*.css
