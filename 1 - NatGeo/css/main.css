@@ -1,0 +1,216 @@
+.disableSelectText, .search_category_label, .search_category_selectAll, .search_category_listItem {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  min-width: 1020px; }
+
+.block_page {
+  background-color: #FBFBFB; }
+
+.page_container {
+  position: absolute;
+  left: 50%;
+  width: 1020px;
+  margin-left: -510px; }
+  @media (max-width: 1020px) {
+    .page_container {
+      left: 0;
+      margin: 0; } }
+
+.block_header {
+  height: 120px; }
+  .block_header .block_logo {
+    position: absolute;
+    left: 40px;
+    top: 39px;
+    width: 162px;
+    height: 48px;
+    background-image: url(../img/logo.png); }
+  .block_header .block_search {
+    position: absolute;
+    left: 351px;
+    top: 37px; }
+  .block_header .block_user {
+    position: absolute;
+    top: 37px;
+    left: 818px; }
+
+.block_search {
+  width: 442px;
+  height: 48px;
+  border: 1px solid #E8E8E8;
+  background: white url(../img/search_icon.png) no-repeat 9px;
+  border-radius: 2px;
+  font-family: "Myriad Pro";
+  font-size: 15px; }
+
+.search_input {
+  display: block;
+  position: absolute;
+  left: 42px;
+  width: 218px;
+  color: #CACACA;
+  outline: none;
+  border: 0;
+  height: 46px; }
+
+.search_input::-webkit-input-placeholder {
+  color: #E7E7E7;
+  font-style: italic; }
+
+.search_input:-moz-placeholder {
+  color: #E7E7E7;
+  font-style: italic; }
+
+.search_input::-moz-placeholder {
+  color: #E7E7E7;
+  font-style: italic; }
+
+.search_input:-ms-input-placeholder {
+  color: #E7E7E7;
+  font-style: italic; }
+
+.search_category_labelContainer {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 261px;
+  width: 138px;
+  z-index: 5; }
+  .search_category_labelContainer.active {
+    height: 39px;
+    border: 1px solid #F1F1F1;
+    border-bottom-color: #FBFBFB;
+    width: 138px; }
+    .search_category_labelContainer.active .search_category_label {
+      margin-top: -7px;
+      border: 0;
+      color: #A8A8A8;
+      background: url(../img/search_category_downSelected.png) no-repeat 110px; }
+
+.search_category_label {
+  position: absolute;
+  top: 12px;
+  margin-top: -6px;
+  color: #CACACA;
+  cursor: pointer;
+  height: 25px;
+  line-height: 25px;
+  width: 126px;
+  background: url(../img/search_category_down.png) no-repeat 110px;
+  border-right: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  padding-left: 12px; }
+
+.search_category_listContainer {
+  display: none;
+  position: absolute;
+  top: 46px;
+  left: -1px;
+  width: 442px;
+  border: 1px solid #E8E8E8;
+  background-color: white; }
+
+.search_category_selectAll {
+  cursor: pointer;
+  margin-top: 11px;
+  margin-left: 5px;
+  padding-left: 25px;
+  background: url(../img/search_category_selectAllUnchecked.png) no-repeat left center;
+  color: #CCC;
+  font-size: 14px; }
+  .search_category_selectAll.checked {
+    background-image: url(../img/search_category_selectAllChecked.png); }
+
+.search_category_list {
+  margin: 11px 0;
+  padding: 0;
+  width: 140px;
+  float: left; }
+  .search_category_list:first-child {
+    padding-left: 4px;
+    padding-right: 3px; }
+  .search_category_list:nth-child(2) {
+    border-left: 1px solid #E9E9E9;
+    border-right: 1px solid #E9E9E9;
+    padding: 0 3px; }
+  .search_category_list:last-child {
+    padding-left: 3px;
+    padding-right: 4px; }
+
+.search_category_listItem {
+  height: 34px;
+  background: #ECECEC url(../img/search_category_x.png) no-repeat 8px;
+  line-height: 34px;
+  padding-left: 30px;
+  list-style: none;
+  color: #999;
+  cursor: pointer; }
+  .search_category_listItem:nth-child(odd) {
+    background-color: #F4F4F4; }
+  .search_category_listItem.bordered {
+    border-top: 1px solid #DDD;
+    border-left: 1px solid #DDD;
+    width: 109px;
+    height: 33px; }
+  .search_category_listItem.bordered.selected {
+    width: 110px; }
+  .search_category_listItem.selected {
+    border: none;
+    background: #555 url(../img/search_category_selected.png) no-repeat 8px;
+    color: white; }
+
+.search_go {
+  position: absolute;
+  left: 409px;
+  top: 13px;
+  width: 22px;
+  height: 22px;
+  background: url(../img/search_go.png) no-repeat center;
+  cursor: pointer; }
+
+.block_user {
+  width: 161px;
+  height: 48px;
+  border: 1px solid #E8E8E8;
+  border-radius: 2px;
+  background: white; }
+
+.user_signUp, .user_signIn {
+  display: block;
+  position: absolute;
+  border: 0;
+  cursor: pointer;
+  background: white url(../img/user_signUp.png) no-repeat 30px 9px;
+  padding: 20px 0 0 0;
+  font-family: "Myriad Pro";
+  font-size: 14px;
+  color: #989898;
+  width: 78px;
+  height: 48px; }
+  .user_signUp:focus, .user_signIn:focus {
+    outline: 0; }
+
+.user_delimiter {
+  display: block;
+  position: absolute;
+  margin-top: 12px;
+  background: #E9E9E9;
+  width: 1px;
+  left: 80px;
+  height: 25px; }
+
+.user_signIn {
+  background-image: url(../img/user_signIn.png);
+  left: 81px; }
+
+/*# sourceMappingURL=main.css.map */
