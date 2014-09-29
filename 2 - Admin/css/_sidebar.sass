@@ -5,8 +5,25 @@
   background: $bgColor
   float: left
 
-  .block_logo
-    height: 145px
-    border-bottom: 1px solid $borderColor
-    background: url(../img/sidebar_logo.png) no-repeat center
+.block_logo
+  height: 145px
+  border-bottom: 1px solid $borderColor
+  background: url(../img/sidebar_logo.png) no-repeat center
 
+.leftMenu
+  margin: 0
+  padding: 0
+
+.leftMenu_item
+  border-bottom: 1px solid white
+  height: 39px
+  list-style: none
+  line-height: 39px
+  padding-left: 19px
+  &:after
+    content: ''
+    margin-top: -1px
+    margin-left: -20px
+    width: $sideBarWidth - 1px
+    display: block
+    border-bottom: 1px solid $borderColor
