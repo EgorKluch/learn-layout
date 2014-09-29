@@ -1,10 +1,7 @@
 =placeholder($selector: '*')
-  #{$selector}::-webkit-input-placeholder
-    @content
-  #{$selector}:-moz-placeholder
-    @content
-  #{$selector}::-moz-placeholder
-    @content
+  #{$selector}::-webkit-input-placeholder,
+  #{$selector}:-moz-placeholder,
+  #{$selector}::-moz-placeholder,
   #{$selector}:-ms-input-placeholder
     @content
 

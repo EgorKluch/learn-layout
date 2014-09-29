@@ -63,18 +63,9 @@ body {
   border: 0;
   height: 46px; }
 
-.search_input::-webkit-input-placeholder {
-  color: #E7E7E7;
-  font-style: italic; }
-
-.search_input:-moz-placeholder {
-  color: #E7E7E7;
-  font-style: italic; }
-
-.search_input::-moz-placeholder {
-  color: #E7E7E7;
-  font-style: italic; }
-
+.search_input::-webkit-input-placeholder,
+.search_input:-moz-placeholder,
+.search_input::-moz-placeholder,
 .search_input:-ms-input-placeholder {
   color: #E7E7E7;
   font-style: italic; }
