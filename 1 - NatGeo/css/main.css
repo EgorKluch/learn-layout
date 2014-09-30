@@ -48,7 +48,7 @@ body {
   width: 442px;
   height: 48px;
   border: 1px solid #E8E8E8;
-  background: white url(../img/search_icon.png) no-repeat 9px;
+  background: white url(../img/search/icon.png) no-repeat 9px;
   border-radius: 2px;
   font-family: "Myriad Pro";
   font-size: 15px; }
@@ -86,7 +86,7 @@ body {
       margin-top: -7px;
       border: 0;
       color: #A8A8A8;
-      background: url(../img/search_category_downSelected.png) no-repeat 110px; }
+      background: url(../img/search/category_downSelected.png) no-repeat 110px; }
 
 .search_category_label {
   position: absolute;
@@ -97,7 +97,7 @@ body {
   height: 25px;
   line-height: 25px;
   width: 126px;
-  background: url(../img/search_category_down.png) no-repeat 110px;
+  background: url(../img/search/category_down.png) no-repeat 110px;
   border-right: 1px solid #eaeaea;
   border-left: 1px solid #eaeaea;
   padding-left: 12px; }
@@ -116,11 +116,11 @@ body {
   margin-top: 11px;
   margin-left: 5px;
   padding-left: 25px;
-  background: url(../img/search_category_selectAllUnchecked.png) no-repeat left center;
+  background: url(../img/search/category_selectAllUnchecked.png) no-repeat left center;
   color: #CCC;
   font-size: 14px; }
   .search_category_selectAll.checked {
-    background-image: url(../img/search_category_selectAllChecked.png); }
+    background-image: url(../img/search/category_selectAllChecked.png); }
 
 .search_category_list {
   margin: 11px 0;
@@ -140,7 +140,7 @@ body {
 
 .search_category_listItem {
   height: 34px;
-  background: #ECECEC url(../img/search_category_x.png) no-repeat 8px;
+  background: #ECECEC url(../img/search/category_x.png) no-repeat 8px;
   line-height: 34px;
   padding-left: 30px;
   list-style: none;
@@ -157,7 +157,7 @@ body {
     width: 110px; }
   .search_category_listItem.selected {
     border: none;
-    background: #555 url(../img/search_category_selected.png) no-repeat 8px;
+    background: #555 url(../img/search/category_selected.png) no-repeat 8px;
     color: white; }
 
 .search_go {
@@ -166,7 +166,7 @@ body {
   top: 13px;
   width: 22px;
   height: 22px;
-  background: url(../img/search_go.png) no-repeat center;
+  background: url(../img/search/go.png) no-repeat center;
   cursor: pointer; }
 
 .block_user {
@@ -181,7 +181,7 @@ body {
   position: absolute;
   border: 0;
   cursor: pointer;
-  background: white url(../img/user_signUp.png) no-repeat 30px 9px;
+  background: white url(../img/user/signUp.png) no-repeat 30px 9px;
   padding: 20px 0 0 0;
   font-family: "Myriad Pro";
   font-size: 14px;
@@ -201,7 +201,7 @@ body {
   height: 25px; }
 
 .user_signIn {
-  background-image: url(../img/user_signIn.png);
+  background-image: url(../img/user/signIn.png);
   left: 81px; }
 
 /*# sourceMappingURL=main.css.map */
