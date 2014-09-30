@@ -5,14 +5,17 @@
   <title>Admin</title>
 
   <link rel="stylesheet" href="css/main.css">
+
+  <script src="../lib/jquery.min.js"></script>
+  <script src="./js/leftMenu.js"></script>
 </head>
 <body>
   <div class="block_page">
     <div class="block_sidebar">
       <div class="block_logo"></div>
-      <div class="block_leftMenu">
+      <div class="block_leftMenu" id="leftMenu">
         <ul class="leftMenu">
-          <li class="leftMenu_item leftMenu_item_dashboard">Dashboard</li>
+          <li class="leftMenu_item leftMenu_item_dashboard selected">Dashboard</li>
           <li class="leftMenu_item leftMenu_item_posts">Posts</li>
           <li class="leftMenu_item leftMenu_item_media">Media</li>
           <li class="leftMenu_item leftMenu_item_pages">Pages</li>
