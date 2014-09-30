@@ -85,6 +85,20 @@ body {
     width: 204px;
     border-bottom: 1px solid white; }
 
+.leftMenu_item_count {
+  display: inline-block;
+  margin-left: 10px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #e94b36;
+  border-radius: 1px;
+  background: #ef5c48;
+  font-size: 11px;
+  font-family: Arial;
+  color: white;
+  line-height: 14px;
+  text-align: center; }
+
 .leftMenu_item_posts {
   background: url(../img/sidebar/posts.png) no-repeat 168px center; }
   .leftMenu_item_posts.selected {
