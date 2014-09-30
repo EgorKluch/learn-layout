@@ -1,5 +1,8 @@
+@import "../../css/mixins"
+
 $pageWidth: 990px
 $sideBarWidth: 205px
+$contentWidth: $pageWidth - $sideBarWidth
 $borderColor: #EBEBEB
 $bgColor: #F7F7F7
 
@@ -46,7 +49,7 @@ body
   display: table-cell
   vertical-align: top
   left: $sideBarWidth
-  width: $pageWidth - $sideBarWidth
+  width: $contentWidth
 
 @import "sidebar"
 @import "content"

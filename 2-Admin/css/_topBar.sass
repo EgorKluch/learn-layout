@@ -1,0 +1,28 @@
+.topBar_panel
+  @include hideSpaces()
+  display: inline-block
+  height: 50px
+  width: $contentWidth / 2 - 2px
+
+.topBar_panel_right
+  .topBar_item
+    &:first-child
+      border-left: 1px solid $borderColor
+    &:last-child
+      border-right: 0
+
+.topBar_panel_right
+  text-align: right
+
+.topBar_item
+  display: inline-block
+  width: 49px
+  height: 50px
+  border: 1px solid $borderColor
+  border-top: 0
+  border-left: 0
+  cursor: pointer
+
+  @each $itemName in add, cloud, comments, alerts, wordpress
+    &.#{$itemName}
+      background: url(../img/topBar/#{$itemName}.png) no-repeat center

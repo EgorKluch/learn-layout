@@ -1,3 +1,11 @@
+.disableSelectText {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 @font-face {
   font-family: Roboto;
   src: url(../../fonts/Roboto-Regular.ttf); }
@@ -152,5 +160,40 @@ body {
 .block_topBar {
   height: 50px;
   border-bottom: 1px solid #EBEBEB; }
+
+.topBar_panel {
+  letter-spacing: -0.3em;
+  display: inline-block;
+  height: 50px;
+  width: 390.5px; }
+  .topBar_panel > * {
+    letter-spacing: normal; }
+
+.topBar_panel_right .topBar_item:first-child {
+  border-left: 1px solid #EBEBEB; }
+.topBar_panel_right .topBar_item:last-child {
+  border-right: 0; }
+
+.topBar_panel_right {
+  text-align: right; }
+
+.topBar_item {
+  display: inline-block;
+  width: 49px;
+  height: 50px;
+  border: 1px solid #EBEBEB;
+  border-top: 0;
+  border-left: 0;
+  cursor: pointer; }
+  .topBar_item.add {
+    background: url(../img/topBar/add.png) no-repeat center; }
+  .topBar_item.cloud {
+    background: url(../img/topBar/cloud.png) no-repeat center; }
+  .topBar_item.comments {
+    background: url(../img/topBar/comments.png) no-repeat center; }
+  .topBar_item.alerts {
+    background: url(../img/topBar/alerts.png) no-repeat center; }
+  .topBar_item.wordpress {
+    background: url(../img/topBar/wordpress.png) no-repeat center; }
 
 /*# sourceMappingURL=main.css.map */
