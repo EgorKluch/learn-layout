@@ -21,7 +21,6 @@ body
   color: #666666
 
 .block_page
-  display: table
   position: absolute
   left: 50%
   margin-left: -$pageWidth / 2
@@ -38,18 +37,47 @@ body
     margin-left: 0
     left: 0
 
-.block_sidebar
-  display: table-cell
-  width: $sideBarWidth - 1px // 1px for border
-  height: 100%
-  border-right: 1px solid $borderColor
+
+.page_container_sidebar
+  float: left
+  overflow: hidden
+  position: relative
+  width: 100%
+  min-height: 100%
+  background: white
+
+.page_container_main
+  float: left
+  right: $contentWidth
+  position: relative
+  width: 100%
   background: $bgColor
 
+.block_sidebar
+  float: left
+  left: $contentWidth
+  position: relative
+  width: $sideBarWidth - 1px // 1px for border
+  border-right: 1px solid $borderColor
+
 .block_main
-  display: table-cell
-  vertical-align: top
-  left: $sideBarWidth
+  float: left
+  position: relative
+  left: $contentWidth
   width: $contentWidth
+  overflow: hidden
+
+.count
+  width: 14px
+  height: 14px
+  border: 1px solid #e94b36
+  border-radius: 1px
+  background: #ef5c48
+  font-size: 11px
+  font-family: Arial
+  color: white
+  line-height: 14px
+  text-align: center
 
 @import "sidebar"
 @import "content"

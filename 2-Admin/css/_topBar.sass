@@ -1,10 +1,9 @@
 .topBar_panel
   @include hideSpaces()
-  display: inline-block
   height: 50px
-  width: $contentWidth / 2 - 2px
 
 .topBar_panel_right
+  float: right
   .topBar_item
     &:first-child
       border-left: 1px solid $borderColor
@@ -13,15 +12,26 @@
 
 .topBar_panel_right
   text-align: right
+  display: block
+  width: 200px
+
+.topBar_panel_left
+  display: inline-block
 
 .topBar_item
+  position: relative
   display: inline-block
-  width: 49px
+  width: 50px
   height: 50px
   border: 1px solid $borderColor
   border-top: 0
   border-left: 0
   cursor: pointer
+
+  .count
+    position: absolute
+    left: 27px
+    top: 7px
 
   @each $itemName in add, cloud, comments, alerts, wordpress
     &.#{$itemName}
