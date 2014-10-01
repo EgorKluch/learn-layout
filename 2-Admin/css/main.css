@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  min-height: 100%;
   min-width: 990px;
   background: #F7F7F7;
   font-family: Roboto;
@@ -42,14 +41,16 @@ body {
   position: relative;
   width: 100%;
   min-height: 100%;
-  background: white; }
+  background: white;
+  height: 100%; }
 
 .page_container_main {
   float: left;
   right: 785px;
   position: relative;
   width: 100%;
-  background: #F7F7F7; }
+  background: #F7F7F7;
+  min-height: 100%; }
 
 .block_sidebar {
   float: left;
