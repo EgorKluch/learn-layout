@@ -7,6 +7,7 @@ $sideBarWidth: 205px
 $contentWidth: $pageWidth - $sideBarWidth
 $borderColor: #ebebeb
 $bgColor: #f7f7f7
+$footerHeight: 51px
 
 @font-face
   font-family: Roboto
@@ -26,10 +27,6 @@ body
   min-height: 100%
   height: 1px // Требуется, что бы для потомков корректно отрабатывало height: 100%
 
-  @media (min-width: $pageWidth)
-    border-right: 1px solid $borderColor
-    border-left: 1px solid $borderColor
-
   @media (max-width: $pageWidth)
     margin-left: 0
     left: 0
@@ -38,7 +35,10 @@ body
   display: table
   min-height: 100%
   height: 1px // Требуется, что бы для потомков корректно отрабатывало height: 100%
-  background: white
+
+  @media (min-width: $pageWidth)
+    border-right: 1px solid $borderColor
+    border-left: 1px solid $borderColor
 
 .block_sidebar
   display: table-cell
@@ -51,6 +51,7 @@ body
   display: table-cell
   width: $contentWidth
   vertical-align: top
+  background: white
 
 .count
   width: 14px
@@ -63,6 +64,30 @@ body
   color: white
   line-height: 14px
   text-align: center
+
+.page_contentContainer
+  display: table-row
+
+.block_footer
+  display: table-row
+  height: $footerHeight
+
+.footer_leftSpacing
+  display: table-cell
+  border-right: 1px solid $borderColor
+
+.footer_container
+  @extend .footer_leftSpacing
+  height: $footerHeight
+  border: 0
+  background: white
+
+  &:before
+    content: ''
+    margin-top: -1px
+    display: block
+    border-top: 1px solid $borderColor
+
 
 @import "sidebar"
 @import "topBar"

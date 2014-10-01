@@ -71,10 +71,6 @@ body {
   width: 990px;
   min-height: 100%;
   height: 1px; }
-  @media (min-width: 990px) {
-    .block_page {
-      border-right: 1px solid #ebebeb;
-      border-left: 1px solid #ebebeb; } }
   @media (max-width: 990px) {
     .block_page {
       margin-left: 0;
@@ -83,8 +79,11 @@ body {
 .page_container {
   display: table;
   min-height: 100%;
-  height: 1px;
-  background: white; }
+  height: 1px; }
+  @media (min-width: 990px) {
+    .page_container {
+      border-right: 1px solid #ebebeb;
+      border-left: 1px solid #ebebeb; } }
 
 .block_sidebar {
   display: table-cell;
@@ -96,7 +95,8 @@ body {
 .block_main {
   display: table-cell;
   width: 785px;
-  vertical-align: top; }
+  vertical-align: top;
+  background: white; }
 
 .count {
   width: 14px;
@@ -109,6 +109,27 @@ body {
   color: white;
   line-height: 14px;
   text-align: center; }
+
+.page_contentContainer {
+  display: table-row; }
+
+.block_footer {
+  display: table-row;
+  height: 51px; }
+
+.footer_leftSpacing, .footer_container {
+  display: table-cell;
+  border-right: 1px solid #ebebeb; }
+
+.footer_container {
+  height: 51px;
+  border: 0;
+  background: white; }
+  .footer_container:before {
+    content: "";
+    margin-top: -1px;
+    display: block;
+    border-top: 1px solid #ebebeb; }
 
 .block_logo {
   height: 145px;
@@ -273,7 +294,7 @@ body {
   .content_block:last-child {
     margin-right: 0; }
   .content_block.size-2 {
-    width: 311px; }
+    width: 310px; }
 
 .content_block_title {
   margin-top: 6px;
@@ -345,5 +366,8 @@ body {
 
 .quickPress_controlPanel_right {
   float: right; }
+
+.block_footer {
+  line-height: 50px; }
 
 /*# sourceMappingURL=main.css.map */
