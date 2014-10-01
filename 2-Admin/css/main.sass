@@ -18,8 +18,6 @@ body
   font-family: Roboto
   color: #666666
 
-
-
 .block_page
   position: absolute
   left: 50%
@@ -27,7 +25,6 @@ body
   width: $pageWidth
   min-height: 100%
   height: 1px // Требуется, что бы для потомков корректно отрабатывало height: 100%
-  background: white
 
   @media (min-width: $pageWidth)
     border-right: 1px solid $borderColor
@@ -37,37 +34,23 @@ body
     margin-left: 0
     left: 0
 
-
-.page_container_sidebar
-  float: left
-  overflow: hidden
-  position: relative
-  width: 100%
+.page_container
+  display: table
   min-height: 100%
+  height: 1px // Требуется, что бы для потомков корректно отрабатывало height: 100%
   background: white
-  height: 100%
-
-.page_container_main
-  float: left
-  right: $contentWidth
-  position: relative
-  width: 100%
-  background: $bgColor
-  min-height: 100%
 
 .block_sidebar
-  float: left
-  left: $contentWidth
-  position: relative
+  display: table-cell
   width: $sideBarWidth - 1px // 1px for border
   border-right: 1px solid $borderColor
+  vertical-align: top
+  background: $bgColor
 
 .block_main
-  float: left
-  position: relative
-  left: $contentWidth
+  display: table-cell
   width: $contentWidth
-  overflow: hidden
+  vertical-align: top
 
 .count
   width: 14px

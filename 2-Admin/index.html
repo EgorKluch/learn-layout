@@ -12,123 +12,116 @@
 <body>
 
 <div class="block_page">
+  <div class="page_container">
+    <div class="block_sidebar">
+      <div class="block_logo"></div>
+      <div class="block_leftMenu" id="leftMenu">
+        <ul class="leftMenu">
+          <li class="leftMenu_item leftMenu_item_dashboard selected">Dashboard</li>
+          <li class="leftMenu_item leftMenu_item_posts">Posts</li>
+          <li class="leftMenu_item leftMenu_item_media">Media</li>
+          <li class="leftMenu_item leftMenu_item_pages">Pages</li>
+          <li class="leftMenu_item leftMenu_item_links">Links</li>
+          <li class="leftMenu_item leftMenu_item_comments">Comments
+            <div class="count">12</div>
+          </li>
+          <li class="leftMenu_item leftMenu_item_widgets">Widgets</li>
+          <li class="leftMenu_item leftMenu_item_plugins">Plugins
+            <div class="count">7</div>
+          </li>
+          <li class="leftMenu_item leftMenu_item_users">Users</li>
+          <li class="leftMenu_item leftMenu_item_tools">Tools</li>
+          <li class="leftMenu_item leftMenu_item_settings">Settings</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="page_container_sidebar">
-    <div class="page_container_main">
 
-
-      <div class="block_sidebar">
-        <div class="block_logo"></div>
-        <div class="block_leftMenu" id="leftMenu">
-          <ul class="leftMenu">
-            <li class="leftMenu_item leftMenu_item_dashboard selected">Dashboard</li>
-            <li class="leftMenu_item leftMenu_item_posts">Posts</li>
-            <li class="leftMenu_item leftMenu_item_media">Media</li>
-            <li class="leftMenu_item leftMenu_item_pages">Pages</li>
-            <li class="leftMenu_item leftMenu_item_links">Links</li>
-            <li class="leftMenu_item leftMenu_item_comments">Comments
-              <div class="count">12</div>
-            </li>
-            <li class="leftMenu_item leftMenu_item_widgets">Widgets</li>
-            <li class="leftMenu_item leftMenu_item_plugins">Plugins
-              <div class="count">7</div>
-            </li>
-            <li class="leftMenu_item leftMenu_item_users">Users</li>
-            <li class="leftMenu_item leftMenu_item_tools">Tools</li>
-            <li class="leftMenu_item leftMenu_item_settings">Settings</li>
-          </ul>
+    <div class="block_main">
+      <div class="block_topBar">
+        <div class="topBar_panel topBar_panel_left">
+          <div class="topBar_item add" title="add"></div>
+        </div>
+        <div class="topBar_panel topBar_panel_right ">
+          <div class="topBar_item cloud" title="cloud"></div>
+          <div class="topBar_item comments" title="comments"><div class="count">12</div></div>
+          <div class="topBar_item alerts" title="alerts"></div>
+          <div class="topBar_item wordpress" title="wordpress"></div>
         </div>
       </div>
 
-
-      <div class="block_main">
-        <div class="block_topBar">
-          <div class="topBar_panel topBar_panel_left">
-            <div class="topBar_item add" title="add"></div>
+      <div class="block_content">
+        <h1 class="content_title">Dashboard</h1>
+        <div class="content_block rightNow size-2">
+          <h2 class="content_block_title">Right Now</h2>
+          <div class="rightNow_content">
+            <h3>Content</h3>
+            <table>
+              <tr>
+                <td>179</td>
+                <td>Posts</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Pages</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Categories</td>
+              </tr>
+              <tr>
+                <td>305</td>
+                <td>Tags</td>
+              </tr>
+            </table>
           </div>
-          <div class="topBar_panel topBar_panel_right ">
-            <div class="topBar_item cloud" title="cloud"></div>
-            <div class="topBar_item comments" title="comments"><div class="count">12</div></div>
-            <div class="topBar_item alerts" title="alerts"></div>
-            <div class="topBar_item wordpress" title="wordpress"></div>
+          <div class="rightNow_discussions">
+            <h3>Discussions</h3>
+            <table>
+              <tr>
+                <td>353</td>
+                <td class="blue">Comments</td>
+              </tr>
+              <tr>
+                <td>319</td>
+                <td class="green">Approved</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td class="orange">Pending</td>
+              </tr>
+              <tr>
+                <td>34</td>
+                <td class="red">Spam</td>
+              </tr>
+            </table>
+          </div>
+          <div class="reightNow_footer">Theme <a href="#">Twenty Eleven</a> with <a href="#">3 Widgets</a></div>
+        </div>
+
+        <div class="content_block quickPress size-2">
+          <h2 class="content_block_title">Quick Press</h2>
+          <input value="Title">
+          <div class="quickPress_viewPanel">
+            <ul>
+              <li class="quickPress_viewPanel_item view1"></li>
+              <li class="quickPress_viewPanel_item view2"></li>
+            </ul>
+          </div>
+          <input value="Content">
+          <input value="Tags">
+          <div class="quickPress_controlPanel">
+            <div class="quickPress_controlPanel_item save"></div>
+            <div class="quickPress_controlPanel_item delete"></div>
+            <div class="quickPress_controlPanel_right">
+              <button class="quickPress_controlPanel_publish">Publish</button>
+            </div>
           </div>
         </div>
 
-        <div class="block_content">
-          <h1 class="content_title">Dashboard</h1>
-          <div class="content_block rightNow size-2">
-            <h2 class="content_block_title">Right Now</h2>
-            <div class="rightNow_content">
-              <h3>Content</h3>
-              <table>
-                <tr>
-                  <td>179</td>
-                  <td>Posts</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>Pages</td>
-                </tr>
-                <tr>
-                  <td>21</td>
-                  <td>Categories</td>
-                </tr>
-                <tr>
-                  <td>305</td>
-                  <td>Tags</td>
-                </tr>
-              </table>
-            </div>
-            <div class="rightNow_discussions">
-              <h3>Discussions</h3>
-              <table>
-                <tr>
-                  <td>353</td>
-                  <td class="blue">Comments</td>
-                </tr>
-                <tr>
-                  <td>319</td>
-                  <td class="green">Approved</td>
-                </tr>
-                <tr>
-                  <td>0</td>
-                  <td class="orange">Pending</td>
-                </tr>
-                <tr>
-                  <td>34</td>
-                  <td class="red">Spam</td>
-                </tr>
-              </table>
-            </div>
-            <div class="reightNow_footer">Theme <a href="#">Twenty Eleven</a> with <a href="#">3 Widgets</a></div>
-          </div>
-
-          <div class="content_block quickPress size-2">
-            <h2 class="content_block_title">Quick Press</h2>
-            <input value="Title">
-            <div class="quickPress_viewPanel">
-              <ul>
-                <li class="quickPress_viewPanel_item view1"></li>
-                <li class="quickPress_viewPanel_item view2"></li>
-              </ul>
-            </div>
-            <input value="Content">
-            <input value="Tags">
-            <div class="quickPress_controlPanel">
-              <div class="quickPress_controlPanel_item save"></div>
-              <div class="quickPress_controlPanel_item delete"></div>
-              <div class="quickPress_controlPanel_right">
-                <button class="quickPress_controlPanel_publish">Publish</button>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="block_footer"></div>
       </div>
 
-
+      <div class="block_footer"></div>
     </div>
   </div>
 </div>

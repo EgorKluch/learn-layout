@@ -70,8 +70,7 @@ body {
   margin-left: -495px;
   width: 990px;
   min-height: 100%;
-  height: 1px;
-  background: white; }
+  height: 1px; }
   @media (min-width: 990px) {
     .block_page {
       border-right: 1px solid #ebebeb;
@@ -81,36 +80,23 @@ body {
       margin-left: 0;
       left: 0; } }
 
-.page_container_sidebar {
-  float: left;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+.page_container {
+  display: table;
   min-height: 100%;
-  background: white;
-  height: 100%; }
-
-.page_container_main {
-  float: left;
-  right: 785px;
-  position: relative;
-  width: 100%;
-  background: #f7f7f7;
-  min-height: 100%; }
+  height: 1px;
+  background: white; }
 
 .block_sidebar {
-  float: left;
-  left: 785px;
-  position: relative;
+  display: table-cell;
   width: 204px;
-  border-right: 1px solid #ebebeb; }
+  border-right: 1px solid #ebebeb;
+  vertical-align: top;
+  background: #f7f7f7; }
 
 .block_main {
-  float: left;
-  position: relative;
-  left: 785px;
+  display: table-cell;
   width: 785px;
-  overflow: hidden; }
+  vertical-align: top; }
 
 .count {
   width: 14px;
