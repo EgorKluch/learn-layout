@@ -1,0 +1,45 @@
+.quickPress
+  height: 243px
+
+  input
+    width: 300px
+    margin-top: 6px
+
+.quickPress_viewPanel
+  width: 100%
+  text-align: right
+  cursor: default
+
+.quickPress_viewPanel_item
+  display: inline-block
+  width: 17px
+  height: 16px
+  margin-top: 8px
+  margin-bottom: -4px
+  cursor: pointer
+
+  &.view1
+    background: url(../img/content/quickPress_view1.png)
+
+  &.view2
+    background: url(../img/content/quickPress_view2_checked.png)
+
+.quickPress_controlPanel
+  margin-top: 17px
+
+.quickPress_controlPanel_item
+  width: 37px
+  height: 29px
+  border: 1px solid $borderColor
+  border-radius: 2px
+  display: inline-block
+  cursor: pointer
+
+  &.save
+    background: #f3f3f3 url(../img/content/quickPress_save.png) no-repeat center
+
+  &.delete
+    background: #f3f3f3 url(../img/content/quickPress_delete.png) no-repeat center
+
+.quickPress_controlPanel_right
+  float: right

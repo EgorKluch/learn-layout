@@ -1,0 +1,36 @@
+$contentWidthPadding: 25px
+$contentBlockDistance: 31px
+$realContentWidth: $contentWidth - $contentWidthPadding * 2
+
+.block_content
+  padding: $contentWidthPadding 30px
+
+.content_title
+  background: url(../img/content/homeIcon.png) no-repeat 1px center
+  padding-left: 38px
+  color: #ea533f
+  font-size: 18px
+  font-weight: bold
+
+.content_block
+  margin-top: 20px
+  padding: 17px
+  border: 1px solid $borderColor
+  border-radius: 6px
+  margin-right: $contentBlockDistance
+  float: left
+
+  &:last-child
+    margin-right: 0
+
+  &.size-2
+    width: ($realContentWidth - $contentBlockDistance) / 2 - 41px
+
+.content_block_title
+  margin-top: 6px
+  color: #000000
+  font-weight: normal
+  font-size: 17px
+
+@import "rightNow"
+@import "quickPress"

@@ -1,23 +1,24 @@
 @import "../../css/mixins"
+@import "reset"
+@import "decoration"
 
 $pageWidth: 990px
 $sideBarWidth: 205px
 $contentWidth: $pageWidth - $sideBarWidth
-$borderColor: #EBEBEB
-$bgColor: #F7F7F7
+$borderColor: #ebebeb
+$bgColor: #f7f7f7
 
 @font-face
   font-family: Roboto
   src: url(../../fonts/Roboto-Regular.ttf)
 
 body
-  margin: 0
-  padding: 0
-  border: 0
   min-width: $pageWidth
   background: $bgColor
   font-family: Roboto
   color: #666666
+
+
 
 .block_page
   position: absolute
@@ -81,4 +82,5 @@ body
   text-align: center
 
 @import "sidebar"
-@import "content"
+@import "topBar"
+@import "content/content"

@@ -1,19 +1,21 @@
+.block_topBar
+  height: 50px
+  border-bottom: 1px solid $borderColor
+
 .topBar_panel
   @include hideSpaces()
   height: 50px
 
 .topBar_panel_right
   float: right
+  text-align: right
+  display: block
+  width: $pageWidth / 2
   .topBar_item
     &:first-child
       border-left: 1px solid $borderColor
     &:last-child
       border-right: 0
-
-.topBar_panel_right
-  text-align: right
-  display: block
-  width: 200px
 
 .topBar_panel_left
   display: inline-block
