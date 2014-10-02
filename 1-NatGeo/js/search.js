@@ -72,7 +72,3 @@ $.fn.searchInput = function () {
 
   return this;
 };
-
-$(document).ready(function () {
-  $('#search').searchInput();
-});

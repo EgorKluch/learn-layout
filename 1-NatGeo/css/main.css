@@ -6,12 +6,23 @@
   -ms-user-select: none;
   user-select: none; }
 
-body {
-  border: 0;
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+button {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-weight: normal; }
+
+body {
   overflow-y: scroll;
-  min-width: 1020px; }
+  min-width: 941px;
+  min-height: 100%;
+  background: #FBFBFB; }
 
 .block_page {
   background-color: #FBFBFB; }
@@ -19,9 +30,10 @@ body {
 .page_container {
   position: absolute;
   left: 50%;
-  width: 1020px;
-  margin-left: -510px; }
-  @media (max-width: 1020px) {
+  width: 941px;
+  margin-left: -470.5px;
+  padding: 0 40px; }
+  @media (max-width: 941px) {
     .page_container {
       left: 0;
       margin: 0; } }
@@ -30,11 +42,10 @@ body {
   height: 120px; }
   .block_header .block_logo {
     position: absolute;
-    left: 40px;
     top: 39px;
     width: 162px;
     height: 48px;
-    background-image: url(../img/logo.png);
+    background: url(../img/logo.png) no-repeat;
     cursor: pointer; }
   .block_header .block_search {
     position: absolute;
@@ -204,5 +215,85 @@ body {
 .user_signIn {
   background-image: url(../img/user/signIn.png);
   left: 81px; }
+
+.mainMenu_vertical {
+  margin-top: 5px;
+  height: 5px;
+  width: 100%;
+  background: #777; }
+
+.mainMenu_container {
+  position: relative;
+  margin-top: -19px; }
+
+.mainMenu_item {
+  display: inline-block;
+  width: 114px;
+  height: 70px;
+  text-align: center;
+  color: #555555;
+  cursor: pointer; }
+  .mainMenu_item.selected {
+    color: #fdcc05;
+    cursor: default; }
+
+.mainMenu_item_icon {
+  display: inline-block;
+  width: 38px;
+  height: 30px;
+  margin-bottom: 11px; }
+
+.mainMenu_item_label {
+  font-size: 16px;
+  font-family: "Myriad pro";
+  font-weight: 600; }
+
+.mainMenu_item_icon.home {
+  background: #FBFBFB url(../img/mainMenu/home.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.home {
+  background: #FBFBFB url(../img/mainMenu/home_selected.png) no-repeat center; }
+
+.mainMenu_item_icon.photography {
+  background: #FBFBFB url(../img/mainMenu/photography.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.photography {
+  background: #FBFBFB url(../img/mainMenu/photography_selected.png) no-repeat center; }
+
+.mainMenu_item_icon.video {
+  background: #FBFBFB url(../img/mainMenu/video.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.video {
+  background: #FBFBFB url(../img/mainMenu/video_selected.png) no-repeat center; }
+
+.mainMenu_item_icon.environment {
+  background: #FBFBFB url(../img/mainMenu/environment.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.environment {
+  background: #FBFBFB url(../img/mainMenu/environment_selected.png) no-repeat center; }
+
+.mainMenu_item_icon.travel {
+  background: #FBFBFB url(../img/mainMenu/travel.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.travel {
+  background: #FBFBFB url(../img/mainMenu/travel_selected.png) no-repeat center; }
+
+.mainMenu_item_icon.adventure {
+  background: #FBFBFB url(../img/mainMenu/adventure.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.adventure {
+  background: #FBFBFB url(../img/mainMenu/adventure_selected.png) no-repeat center; }
+
+.mainMenu_item_icon.television {
+  background: #FBFBFB url(../img/mainMenu/television.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.television {
+  background: #FBFBFB url(../img/mainMenu/television_selected.png) no-repeat center; }
+
+.mainMenu_item_icon.kids {
+  background: #FBFBFB url(../img/mainMenu/kids.png) no-repeat center; }
+
+.mainMenu_item.selected .mainMenu_item_icon.kids {
+  background: #FBFBFB url(../img/mainMenu/kids_selected.png) no-repeat center; }
 
 /*# sourceMappingURL=main.css.map */

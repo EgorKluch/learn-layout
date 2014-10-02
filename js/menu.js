@@ -1,12 +1,12 @@
 /**
  * @author EgorKluch (EgorKluch@gmail.com)
- * @date: 30.09.2014
+ * @date: 02.10.2014
  */
 
 'use strict';
 
-$.fn.leftMenu = function () {
-  var $menuItems = $('.leftMenu_item', this);
+$.fn.menu = function (options) {
+  var $menuItems = $(options.items, this);
 
   $menuItems.click(function () {
     var $this = $(this);
@@ -15,7 +15,3 @@ $.fn.leftMenu = function () {
     $(this).addClass('selected');
   });
 };
-
-$(document).ready(function () {
-  $('#leftMenu').leftMenu();
-});

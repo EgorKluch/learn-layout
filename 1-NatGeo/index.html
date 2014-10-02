@@ -5,65 +5,99 @@
   <title>National Geographic</title>
 
   <script src="../lib/jquery.min.js"></script>
+  <script src="../js/menu.js"></script>
   <script src="./js/search.js"></script>
+  <script src="./js/main.js"></script>
 
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <div class="block_page">
-
+    <div class="page_container">
 
     <div class="block_header">
-      <div class="page_container">
-        
-        <div class="block_logo"></div>
 
-        <div class="block_search" id="search">
-          <input class="search_input" placeholder="Search">
-          <div class="search_category">
-            <div class="search_category_labelContainer">
-              <div class="search_category_label" title="All categories">All categories</div>
-            </div>
-            <div class="search_category_listContainer" id="searchCategories">
-              <div class="search_category_selectAll">Select all categories to search</div>
-              <div class="search_category_listsContainer">
-                <ul class="search_category_list">
-                  <li class="search_category_listItem bordered">Videos</li>
-                  <li class="search_category_listItem bordered">Photography</li>
-                  <li class="search_category_listItem bordered">Animals</li>
-                  <li class="search_category_listItem">Games</li>
-                </ul>
-                <ul class="search_category_list">
-                  <li class="search_category_listItem">Environment</li>
-                  <li class="search_category_listItem">Travel</li>
-                  <li class="search_category_listItem">Kids</li>
-                  <li class="search_category_listItem">Adventurer</li>
-                </ul>
-                <ul class="search_category_list">
-                  <li class="search_category_listItem bordered">Television</li>
-                  <li class="search_category_listItem bordered">Apps</li>
-                  <li class="search_category_listItem bordered">Events</li>
-                  <li class="search_category_listItem">Trips</li>
-                </ul>
-              </div>
+      <div class="block_logo"></div>
+
+      <div class="block_search" id="search">
+        <input class="search_input" placeholder="Search">
+        <div class="search_category">
+          <div class="search_category_labelContainer">
+            <div class="search_category_label" title="All categories">All categories</div>
+          </div>
+          <div class="search_category_listContainer" id="searchCategories">
+            <div class="search_category_selectAll">Select all categories to search</div>
+            <div class="search_category_listsContainer">
+              <ul class="search_category_list">
+                <li class="search_category_listItem bordered">Videos</li>
+                <li class="search_category_listItem bordered">Photography</li>
+                <li class="search_category_listItem bordered">Animals</li>
+                <li class="search_category_listItem">Games</li>
+              </ul>
+              <ul class="search_category_list">
+                <li class="search_category_listItem">Environment</li>
+                <li class="search_category_listItem">Travel</li>
+                <li class="search_category_listItem">Kids</li>
+                <li class="search_category_listItem">Adventurer</li>
+              </ul>
+              <ul class="search_category_list">
+                <li class="search_category_listItem bordered">Television</li>
+                <li class="search_category_listItem bordered">Apps</li>
+                <li class="search_category_listItem bordered">Events</li>
+                <li class="search_category_listItem">Trips</li>
+              </ul>
             </div>
           </div>
-          <div class="search_go"></div>
         </div>
+        <div class="search_go"></div>
+      </div>
 
-        <div class="block_user">
-          <button class="user_signUp">Sign Up</button>
-          <div class="user_delimiter"></div>
-          <button class="user_signIn">Login</button>
-        </div>
-
+      <div class="block_user">
+        <button class="user_signUp">Sign Up</button>
+        <div class="user_delimiter"></div>
+        <button class="user_signIn">Login</button>
       </div>
     </div>
 
+    <div class="block_mainMenu" id="mainMenu">
+        <div class="mainMenu_vertical"></div>
 
-    <div class="menu">
+        <ul class="mainMenu_container">
+          <li class="mainMenu_item selected">
+            <div class="mainMenu_item_icon home"></div>
+            <div class="mainMenu_item_label">HOME</div>
+          </li>
+          <li class="mainMenu_item">
+            <div class="mainMenu_item_icon photography"></div>
+            <div class="mainMenu_item_label">Photography</div>
+          </li>
+          <li class="mainMenu_item">
+            <div class="mainMenu_item_icon video"></div>
+            <div class="mainMenu_item_label">Video</div>
+          </li>
+          <li class="mainMenu_item">
+            <div class="mainMenu_item_icon environment"></div>
+            <div class="mainMenu_item_label">Environment</div>
+          </li>
+          <li class="mainMenu_item">
+            <div class="mainMenu_item_icon travel"></div>
+            <div class="mainMenu_item_label">Travel</div>
+          </li>
+          <li class="mainMenu_item">
+            <div class="mainMenu_item_icon adventure"></div>
+            <div class="mainMenu_item_label">Adventure</div>
+          </li>
+          <li class="mainMenu_item">
+            <div class="mainMenu_item_icon television"></div>
+            <div class="mainMenu_item_label">Television</div>
+          </li>
+          <li class="mainMenu_item">
+            <div class="mainMenu_item_icon kids"></div>
+            <div class="mainMenu_item_label">Kids</div>
+          </li>
+        </ul>
+
     </div>
-
 
     <div class="content">
       <div class="content_left">
@@ -87,6 +121,7 @@
       </div>
     </div>
 
+    </div>
 
     <div class="footer">
       <div class="footer_subscribeForm"></div>

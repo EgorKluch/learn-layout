@@ -1,14 +1,15 @@
-@import "../../css/_mixins"
+@import "../../css/mixins"
+@import "../../css/reset"
 
 $pageColor: #FBFBFB
-$pageWidth: 1020px
+$pageWidth: 941px
+
 
 body
-  border: 0
-  margin: 0
-  padding: 0
   overflow-y: scroll
   min-width: $pageWidth
+  min-height: 100%
+  background: $pageColor
 
 .block_page
   background-color: $pageColor
@@ -18,6 +19,7 @@ body
   left: 50%
   width: $pageWidth
   margin-left: -$pageWidth / 2
+  padding: 0 40px
 
   @media (max-width: $pageWidth)
     left: 0,
