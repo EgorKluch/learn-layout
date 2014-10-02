@@ -182,52 +182,52 @@ body {
     margin-left: 10px; }
 
 .leftMenu_item_posts {
-  background: url(../img/sidebar/posts.png) no-repeat 168px center; }
+  background: url(../img/icons/posts.png) no-repeat 168px center; }
   .leftMenu_item_posts.selected {
     background-position: 167px; }
 
 .leftMenu_item_media {
-  background: url(../img/sidebar/media.png) no-repeat 168px center; }
+  background: url(../img/icons/media.png) no-repeat 168px center; }
   .leftMenu_item_media.selected {
     background-position: 167px; }
 
 .leftMenu_item_pages {
-  background: url(../img/sidebar/pages.png) no-repeat 168px center; }
+  background: url(../img/icons/pages.png) no-repeat 168px center; }
   .leftMenu_item_pages.selected {
     background-position: 167px; }
 
 .leftMenu_item_links {
-  background: url(../img/sidebar/links.png) no-repeat 168px center; }
+  background: url(../img/icons/links.png) no-repeat 168px center; }
   .leftMenu_item_links.selected {
     background-position: 167px; }
 
 .leftMenu_item_comments {
-  background: url(../img/sidebar/comments.png) no-repeat 168px center; }
+  background: url(../img/icons/comments.png) no-repeat 168px center; }
   .leftMenu_item_comments.selected {
     background-position: 167px; }
 
 .leftMenu_item_widgets {
-  background: url(../img/sidebar/widgets.png) no-repeat 168px center; }
+  background: url(../img/icons/widgets.png) no-repeat 168px center; }
   .leftMenu_item_widgets.selected {
     background-position: 167px; }
 
 .leftMenu_item_plugins {
-  background: url(../img/sidebar/plugins.png) no-repeat 168px center; }
+  background: url(../img/icons/plugins.png) no-repeat 168px center; }
   .leftMenu_item_plugins.selected {
     background-position: 167px; }
 
 .leftMenu_item_users {
-  background: url(../img/sidebar/users.png) no-repeat 168px center; }
+  background: url(../img/icons/users.png) no-repeat 168px center; }
   .leftMenu_item_users.selected {
     background-position: 167px; }
 
 .leftMenu_item_tools {
-  background: url(../img/sidebar/tools.png) no-repeat 168px center; }
+  background: url(../img/icons/tools.png) no-repeat 168px center; }
   .leftMenu_item_tools.selected {
     background-position: 167px; }
 
 .leftMenu_item_settings {
-  background: url(../img/sidebar/settings.png) no-repeat 168px center; }
+  background: url(../img/icons/settings.png) no-repeat 168px center; }
   .leftMenu_item_settings.selected {
     background-position: 167px; }
 
@@ -268,21 +268,21 @@ body {
     left: 27px;
     top: 7px; }
   .topBar_item.add {
-    background: url(../img/topBar/add.png) no-repeat center; }
+    background: url(../img/icons/add.png) no-repeat center; }
   .topBar_item.cloud {
-    background: url(../img/topBar/cloud.png) no-repeat center; }
+    background: url(../img/icons/cloud.png) no-repeat center; }
   .topBar_item.comments {
-    background: url(../img/topBar/comments.png) no-repeat center; }
+    background: url(../img/icons/comments.png) no-repeat center; }
   .topBar_item.alerts {
-    background: url(../img/topBar/alerts.png) no-repeat center; }
+    background: url(../img/icons/alerts.png) no-repeat center; }
   .topBar_item.wordpress {
-    background: url(../img/topBar/wordpress.png) no-repeat center; }
+    background: url(../img/icons/wordpress.png) no-repeat center; }
 
 .block_content {
   padding: 25px 30px; }
 
 .content_title {
-  background: url(../img/content/homeIcon.png) no-repeat 1px center;
+  background: url(../img/icons/home.png) no-repeat 1px center;
   padding-left: 38px;
   color: #ea533f;
   font-size: 18px;
@@ -349,9 +349,9 @@ body {
   margin-bottom: -4px;
   cursor: pointer; }
   .quickPress_viewPanel_item.view1 {
-    background: url(../img/content/quickPress_view1.png); }
+    background: url(../img/icons/view1.png); }
   .quickPress_viewPanel_item.view2 {
-    background: url(../img/content/quickPress_view2_checked.png); }
+    background: url(../img/icons/view2_checked.png); }
 
 .quickPress_controlPanel {
   margin-top: 17px; }
@@ -364,9 +364,9 @@ body {
   display: inline-block;
   cursor: pointer; }
   .quickPress_controlPanel_item.save {
-    background: #f3f3f3 url(../img/content/quickPress_save.png) no-repeat center; }
+    background: #f3f3f3 url(../img/icons/save.png) no-repeat center; }
   .quickPress_controlPanel_item.delete {
-    background: #f3f3f3 url(../img/content/quickPress_delete.png) no-repeat center; }
+    background: #f3f3f3 url(../img/icons/delete.png) no-repeat center; }
 
 .quickPress_controlPanel_right {
   float: right; }
@@ -400,13 +400,13 @@ body {
   border-left: 1px solid #ebebeb;
   cursor: pointer; }
   .footer_panel_item.settings {
-    background: url(../img/footer/settings.png) no-repeat center; }
+    background: url(../img/icons/settings2.png) no-repeat center; }
   .footer_panel_item.signOut {
-    background: url(../img/footer/signOut.png) no-repeat center; }
+    background: url(../img/icons/signOut.png) no-repeat center; }
   .footer_panel_item.user {
     top: -19px;
     width: auto;
-    background: url(../img/footer/userpic.jpg) no-repeat 10px center;
+    background: url(../img/etc/userpic.jpg) no-repeat 10px center;
     padding-left: 59px;
     padding-right: 20px;
     text-align: left; }

@@ -25,14 +25,16 @@
   border-left: 1px solid $borderColor
   cursor: pointer
 
-  @each $itemName in settings, signOut
-    &.#{$itemName}
-      background: url(../img/footer/#{$itemName}.png) no-repeat center
+  &.settings
+    background: url(../img/icons/settings2.png) no-repeat center
+
+  &.signOut
+    background: url(../img/icons/signOut.png) no-repeat center
 
   &.user
     top: -19px
     width: auto
-    background: url(../img/footer/userpic.jpg) no-repeat 10px center
+    background: url(../img/etc/userpic.jpg) no-repeat 10px center
     padding-left: 59px
     padding-right: 20px
     text-align: left
