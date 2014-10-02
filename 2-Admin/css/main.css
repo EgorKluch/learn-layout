@@ -133,13 +133,16 @@ body {
     border-top: 1px solid #ebebeb; }
 
 .block_logo {
+  position: fixed;
   height: 145px;
+  width: 205px;
   border-bottom: 1px solid #ebebeb;
   background: url(../img/logo.png) no-repeat center;
   cursor: pointer; }
 
 .leftMenu {
-  margin: 0;
+  position: fixed;
+  margin: 145px 0 0;
   padding: 0; }
 
 .leftMenu_item {
