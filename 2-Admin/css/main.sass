@@ -1,8 +1,95 @@
+@import "../../css/mixins"
+@import "reset"
+@import "decoration"
+
+$pageWidth: 990px
+$sideBarWidth: 205px
+$contentWidth: $pageWidth - $sideBarWidth
+$borderColor: #ebebeb
+$bgColor: #f7f7f7
+$footerHeight: 51px
+
+@font-face
+  font-family: Roboto
+  src: url(../../fonts/Roboto-Regular.ttf)
+
 body
-  margin: 0
-  padding: 0
-  border: 0
+  min-width: $pageWidth
+  background: $bgColor
+  font-family: Roboto
+  color: #666666
 
 .block_page
-  width: 990px
-  margin: auto
+  position: absolute
+  left: 50%
+  margin-left: -$pageWidth / 2
+  width: $pageWidth
+  min-height: 100%
+  height: 1px // Требуется, что бы для потомков корректно отрабатывало height: 100%
+
+  @media (max-width: $pageWidth)
+    margin-left: 0
+    left: 0
+
+.page_container
+  display: table
+  min-height: 100%
+  height: 1px // Требуется, что бы для потомков корректно отрабатывало height: 100%
+
+  @media (min-width: $pageWidth)
+    border-right: 1px solid $borderColor
+    border-left: 1px solid $borderColor
+
+.block_sidebar
+  display: table-cell
+  width: $sideBarWidth - 1px // 1px for border
+  border-right: 1px solid $borderColor
+  vertical-align: top
+  background: $bgColor
+
+.block_main
+  display: table-cell
+  width: $contentWidth
+  vertical-align: top
+  background: white
+  padding-bottom: 30px
+
+.count
+  width: 14px
+  height: 14px
+  border: 1px solid #e94b36
+  border-radius: 1px
+  background: #ef5c48
+  font-size: 11px
+  font-family: Arial
+  color: white
+  line-height: 14px
+  text-align: center
+
+.page_contentContainer
+  display: table-row
+
+.block_footer
+  display: table-row
+  height: $footerHeight
+
+.footer_leftSpacing
+  display: table-cell
+  border-right: 1px solid $borderColor
+
+.footer_container
+  @extend .footer_leftSpacing
+  height: $footerHeight
+  border: 0
+  background: white
+
+  &:before
+    content: ''
+    margin-top: -1px
+    display: block
+    border-top: 1px solid $borderColor
+
+
+@import "sidebar"
+@import "topBar"
+@import "content/content"

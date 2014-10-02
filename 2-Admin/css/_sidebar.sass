@@ -1,0 +1,57 @@
+.block_logo
+  position: fixed
+  height: 145px
+  width: $sideBarWidth
+  border-bottom: 1px solid $borderColor
+  background: url(../img/logo.png) no-repeat center
+  cursor: pointer
+
+.leftMenu
+  position: fixed
+  margin: 145px 0 0
+  padding: 0
+
+$leftMenuItemHeight: 40px
+.leftMenu_item
+  border-bottom: 1px solid $borderColor
+  height: 40px
+  list-style: none
+  line-height: 40px
+  padding-left: 20px
+  cursor: pointer
+  &.selected
+    position: relative
+    left: 1px
+    background-color: white
+    padding-left: 19px
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      margin-top: -1px
+      margin-left: -1px
+      width: 5px
+      height: $leftMenuItemHeight + 2px
+      background-color: #ea533f
+    &:after
+      margin-left: -15px
+      width: $sideBarWidth - 6px
+  &:after
+    content: ''
+    display: block
+    margin-top: 1px
+    margin-left: -20px
+    width: $sideBarWidth - 1px
+    border-bottom: 1px solid white
+
+  .count
+    display: inline-block
+    margin-left: 10px
+
+$iconPos: $sideBarWidth - 37px
+@each $itemName in posts, media, pages, links, comments, widgets, plugins, users, tools, settings
+  .leftMenu_item_#{$itemName}
+    background: url(../img/icons/#{$itemName}.png) no-repeat $iconPos center
+    &.selected
+      background-position: $iconPos - 1

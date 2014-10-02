@@ -1,0 +1,28 @@
+.rightNow
+  height: 243px
+
+  h3
+    margin-bottom: 10px
+    padding-bottom: 7px
+    border-bottom: 1px dotted #999
+    color: #666666
+    font-size: 15px
+
+  td
+    font-size: 14px
+    padding-bottom: 11px
+    &:first-child
+      @extend .blue
+      padding-right: 10px
+      text-align: right
+
+  .rightNow_content
+    margin-top: 13px
+    font-size: 13px
+    width: 123px
+    float: left
+    margin-bottom: 13px
+
+.rightNow_discussions
+  @extend .rightNow_content
+  margin-left: 54px

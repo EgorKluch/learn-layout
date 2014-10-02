@@ -1,0 +1,40 @@
+.block_footer
+  line-height: $footerHeight - 1px
+
+.footer_twitterLink
+  padding-left: 51px
+  background: url(../img/content/footer/twitter.png) no-repeat 18px center
+  float: left
+  height: 50px
+  overflow: hidden
+
+.footer_panel
+  @include hideSpaces()
+  position: relative
+  float: right
+  height: $footerHeight
+  overflow: hidden
+  text-align: right
+  width: 325px
+
+.footer_panel_item
+  display: inline-block
+  position: relative
+  width: 50px
+  height: 50px
+  border-left: 1px solid $borderColor
+  cursor: pointer
+
+  &.settings
+    background: url(../img/icons/settings2.png) no-repeat center
+
+  &.signOut
+    background: url(../img/icons/signOut.png) no-repeat center
+
+  &.user
+    top: -19px
+    width: auto
+    background: url(../img/etc/userpic.jpg) no-repeat 10px center
+    padding-left: 59px
+    padding-right: 20px
+    text-align: left
