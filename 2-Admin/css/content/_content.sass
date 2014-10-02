@@ -20,11 +20,10 @@ $realContentWidth: $contentWidth - $contentWidthPadding * 2
   margin-right: $contentBlockDistance
   float: left
 
-  &:last-child
-    margin-right: 0
-
   &.size-2
     width: ($realContentWidth - $contentBlockDistance) / 2 - 42px
+    &:nth-child(odd)
+      margin-right: 0
 
 .content_block_title
   margin-top: 6px

@@ -96,7 +96,8 @@ body {
   display: table-cell;
   width: 785px;
   vertical-align: top;
-  background: white; }
+  background: white;
+  padding-bottom: 30px; }
 
 .count {
   width: 14px;
@@ -291,10 +292,10 @@ body {
   border-radius: 6px;
   margin-right: 31px;
   float: left; }
-  .content_block:last-child {
-    margin-right: 0; }
   .content_block.size-2 {
     width: 310px; }
+    .content_block.size-2:nth-child(odd) {
+      margin-right: 0; }
 
 .content_block_title {
   margin-top: 6px;
@@ -369,5 +370,42 @@ body {
 
 .block_footer {
   line-height: 50px; }
+
+.footer_twitterLink {
+  padding-left: 51px;
+  background: url(../img/content/footer/twitter.png) no-repeat 18px center;
+  float: left;
+  height: 50px;
+  overflow: hidden; }
+
+.footer_panel {
+  letter-spacing: -0.3em;
+  position: relative;
+  float: right;
+  height: 51px;
+  overflow: hidden;
+  text-align: right;
+  width: 325px; }
+  .footer_panel > * {
+    letter-spacing: normal; }
+
+.footer_panel_item {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-left: 1px solid #ebebeb;
+  cursor: pointer; }
+  .footer_panel_item.settings {
+    background: url(../img/footer/settings.png) no-repeat center; }
+  .footer_panel_item.signOut {
+    background: url(../img/footer/signOut.png) no-repeat center; }
+  .footer_panel_item.user {
+    top: -19px;
+    width: auto;
+    background: url(../img/footer/userpic.jpg) no-repeat 10px center;
+    padding-left: 59px;
+    padding-right: 20px;
+    text-align: left; }
 
 /*# sourceMappingURL=main.css.map */
