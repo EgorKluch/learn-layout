@@ -4,12 +4,13 @@
 $pageColor: #FBFBFB
 $borderColor: #EAEAEA
 $pageWidth: 941px
+$pageLeft: $pageWidth / 2
 
 body
   overflow-y: scroll
   min-width: $pageWidth
-  min-height: 100%
   background: $pageColor
+  overflow-x: hidden
 
 .block_page
   background-color: $pageColor
@@ -18,7 +19,7 @@ body
   position: absolute
   left: 50%
   width: $pageWidth
-  margin-left: -$pageWidth / 2
+  margin-left: -$pageLeft
   padding: 0 40px
 
   @media (max-width: $pageWidth)
@@ -27,3 +28,4 @@ body
 
 @import "header"
 @import "content"
+@import "footer"

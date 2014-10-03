@@ -1,0 +1,11 @@
+.block_footer
+  background-color: #1F1F1F
+  height: 70px
+  color: white
+  // Требуется сделать footer во всю ширину экрана
+  // Что бы сделать шире родителя (.page_container), используем хак
+  // За пределами страницы footer обрезается свойством body { overflow-x: hidden }
+  margin-left: -30000px
+  padding-left: 30000px
+  width: $pageWidth
+  padding-right: 30000px
