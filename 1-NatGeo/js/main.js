@@ -9,5 +9,8 @@ $(document).ready(function () {
   $('#mainMenu').menu({
     items: '.mainMenu_item'
   });
+  $('#subMenu').menu({
+    items: '.subMenu_item'
+  });
   $('#search').searchInput();
 });
