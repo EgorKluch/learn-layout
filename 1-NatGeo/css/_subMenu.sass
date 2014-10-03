@@ -1,24 +1,30 @@
+$subMenuItems: dailyNews, magazine, maps, science, education, games, events, blogs, explorers, trips
+$penultItemIndex: length($subMenuItems) - 1
+
 .subMenu_container
   @include hideSpaces()
   width: 162px
   font-family: "Myriad Pro"
   font-size: 11px
-  color: #777777
+  color: #777
   font-weight: bold
 
 .subMenu_item
   display: inline-block
   width: 76px
   height: 68px - 49px
-  background: white
-  border: 1px solid #eee
+  border: 1px solid #EEE
   padding-top: 49px
   margin-bottom: 5px
   cursor: pointer
 
+  &:nth-child(#{$penultItemIndex}),
+  &:last-child
+    margin: 0
+
   &.selected
     border-color: #555
-    color: #ffffff
+    color: white
     cursor: default
 
   &:nth-child(odd)
@@ -26,9 +32,9 @@
 
   text-align: center
 
-  @each $itemName in dailyNews, magazine, maps, science, education, games, events, blogs, explorers, trips
+  @each $itemName in $subMenuItems
     &.#{$itemName}
-      background: url(../img/subMenu/#{$itemName}.png) no-repeat 21px 10px
+      background: white url(../img/subMenu/#{$itemName}.png) no-repeat 21px 10px
 
     &.#{$itemName}.selected
       background: #555 url(../img/subMenu/#{$itemName}_selected.png) no-repeat 21px 10px

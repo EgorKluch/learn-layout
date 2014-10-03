@@ -110,8 +110,8 @@ body {
   line-height: 25px;
   width: 126px;
   background: url(../img/search/category_down.png) no-repeat 110px;
-  border-right: 1px solid #eaeaea;
-  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #EAEAEA;
+  border-left: 1px solid #EAEAEA;
   padding-left: 12px; }
 
 .search_category_listContainer {
@@ -296,12 +296,20 @@ body {
 .mainMenu_item.selected .mainMenu_item_icon.kids {
   background: #FBFBFB url(../img/mainMenu/kids_selected.png) no-repeat center; }
 
+.block_content {
+  margin-top: 30px; }
+
+.block_subMenu {
+  width: 174px;
+  border-right: 1px solid #EAEAEA;
+  float: left; }
+
 .subMenu_container {
   letter-spacing: -0.3em;
   width: 162px;
   font-family: "Myriad Pro";
   font-size: 11px;
-  color: #777777;
+  color: #777;
   font-weight: bold; }
   .subMenu_container > * {
     letter-spacing: normal; }
@@ -310,56 +318,57 @@ body {
   display: inline-block;
   width: 76px;
   height: 19px;
-  background: white;
-  border: 1px solid #eee;
+  border: 1px solid #EEE;
   padding-top: 49px;
   margin-bottom: 5px;
   cursor: pointer;
   text-align: center; }
+  .subMenu_item:nth-child(9), .subMenu_item:last-child {
+    margin: 0; }
   .subMenu_item.selected {
     border-color: #555;
-    color: #ffffff;
+    color: white;
     cursor: default; }
   .subMenu_item:nth-child(odd) {
     margin-right: 6px; }
   .subMenu_item.dailyNews {
-    background: url(../img/subMenu/dailyNews.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/dailyNews.png) no-repeat 21px 10px; }
   .subMenu_item.dailyNews.selected {
     background: #555 url(../img/subMenu/dailyNews_selected.png) no-repeat 21px 10px; }
   .subMenu_item.magazine {
-    background: url(../img/subMenu/magazine.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/magazine.png) no-repeat 21px 10px; }
   .subMenu_item.magazine.selected {
     background: #555 url(../img/subMenu/magazine_selected.png) no-repeat 21px 10px; }
   .subMenu_item.maps {
-    background: url(../img/subMenu/maps.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/maps.png) no-repeat 21px 10px; }
   .subMenu_item.maps.selected {
     background: #555 url(../img/subMenu/maps_selected.png) no-repeat 21px 10px; }
   .subMenu_item.science {
-    background: url(../img/subMenu/science.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/science.png) no-repeat 21px 10px; }
   .subMenu_item.science.selected {
     background: #555 url(../img/subMenu/science_selected.png) no-repeat 21px 10px; }
   .subMenu_item.education {
-    background: url(../img/subMenu/education.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/education.png) no-repeat 21px 10px; }
   .subMenu_item.education.selected {
     background: #555 url(../img/subMenu/education_selected.png) no-repeat 21px 10px; }
   .subMenu_item.games {
-    background: url(../img/subMenu/games.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/games.png) no-repeat 21px 10px; }
   .subMenu_item.games.selected {
     background: #555 url(../img/subMenu/games_selected.png) no-repeat 21px 10px; }
   .subMenu_item.events {
-    background: url(../img/subMenu/events.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/events.png) no-repeat 21px 10px; }
   .subMenu_item.events.selected {
     background: #555 url(../img/subMenu/events_selected.png) no-repeat 21px 10px; }
   .subMenu_item.blogs {
-    background: url(../img/subMenu/blogs.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/blogs.png) no-repeat 21px 10px; }
   .subMenu_item.blogs.selected {
     background: #555 url(../img/subMenu/blogs_selected.png) no-repeat 21px 10px; }
   .subMenu_item.explorers {
-    background: url(../img/subMenu/explorers.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/explorers.png) no-repeat 21px 10px; }
   .subMenu_item.explorers.selected {
     background: #555 url(../img/subMenu/explorers_selected.png) no-repeat 21px 10px; }
   .subMenu_item.trips {
-    background: url(../img/subMenu/trips.png) no-repeat 21px 10px; }
+    background: white url(../img/subMenu/trips.png) no-repeat 21px 10px; }
   .subMenu_item.trips.selected {
     background: #555 url(../img/subMenu/trips_selected.png) no-repeat 21px 10px; }
 
