@@ -12,5 +12,8 @@ $(document).ready(function () {
   $('#subMenu').menu({
     items: '.subMenu_item'
   });
+  $('#sliderMenu').menu({
+    items: '.slider_menu_item'
+  });
   $('#search').searchInput();
 });
