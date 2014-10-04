@@ -21,8 +21,7 @@ button {
 body {
   overflow-y: scroll;
   min-width: 941px;
-  background: #FBFBFB;
-  overflow-x: hidden; }
+  background: #FBFBFB; }
 
 .block_page {
   background-color: #FBFBFB; }
@@ -31,8 +30,7 @@ body {
   position: absolute;
   left: 50%;
   width: 941px;
-  margin-left: -470.5px;
-  padding: 0 40px; }
+  margin-left: -470.5px; }
   @media (max-width: 941px) {
     .page_container {
       left: 0;
@@ -428,10 +426,11 @@ body {
 .block_footer {
   background-color: #1F1F1F;
   height: 70px;
+  width: 100%;
   color: white;
-  margin-left: -30000px;
-  padding-left: 30000px;
-  width: 941px;
-  padding-right: 30000px; }
+  display: block;
+  padding: 0 40px;
+  position: relative;
+  left: -40px; }
 
 /*# sourceMappingURL=main.css.map */
