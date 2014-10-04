@@ -31,3 +31,56 @@
       content: 'a'
       display: block
       text-align: center
+
+.slider_pics_container
+  position: relative
+  clear: both
+  padding-top: 18px
+  font-family: "Myriad Pro"
+  font-weight: 600
+  color: white
+
+.slider_pic
+  list-style: none
+
+.slider_paginator
+  @include hideSpaces()
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+
+.slider_paginator_container
+  @include hideSpaces()
+  padding-top: 18px
+  text-align: right
+
+.slider_pageNumber
+  display: inline-block
+  line-height: 30px
+  text-align: center
+  height: 30px
+  width: 26px
+  background-color: #555
+  cursor: pointer
+
+  &:after
+    content: ''
+    display: block
+    height: 19px
+    width: 1px
+    margin-top: -25px
+    background-color: #717171
+
+  &:first-child:after
+    display: none
+
+  &.selected
+    background: #fdcc05
+    cursor: default
+
+    &:after
+      display: none
+
+    + .slider_pageNumber:after
+      display: none

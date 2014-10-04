@@ -15,5 +15,8 @@ $(document).ready(function () {
   $('#sliderMenu').menu({
     items: '.slider_menu_item'
   });
+  $('#sliderPaginator').menu({
+    items: '.slider_pageNumber'
+  });
   $('#search').searchInput();
 });
