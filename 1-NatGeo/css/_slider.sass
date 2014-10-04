@@ -5,8 +5,8 @@
 .slider_menu_item
   display: block
   float: left
-  min-width: 63px
-  padding: 0 7px
+  min-width: 65px
+  padding: 0 6px
   height: 28px
   line-height: 28px
   text-align: center
@@ -36,12 +36,12 @@
   position: relative
   clear: both
   padding-top: 18px
-  font-family: "Myriad Pro"
   font-weight: 600
   color: white
 
 .slider_pic
   list-style: none
+  height: 226px
 
 .slider_paginator
   @include hideSpaces()
@@ -84,3 +84,30 @@
 
     + .slider_pageNumber:after
       display: none
+
+.slider_content
+  border: 1px solid #EEE
+  border-right: 0
+  padding: 9px 0 11px 13px
+  box-sizing: border-box
+  height: 53px
+  width: 451px
+  float: left
+
+.slider_content_title
+  color: #555
+  font-size: 16px
+  font-weight: bold
+
+.slider_content_description
+  color: #555
+  font-size: 12px
+
+.slider_pause
+  display: inline-block
+  float: right
+  width: 51px
+  height: 51px
+  border: 1px solid #EEE
+  background: url(../img/icons/pause.png) no-repeat center
+  cursor: pointer

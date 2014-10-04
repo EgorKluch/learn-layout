@@ -21,7 +21,8 @@ button {
 body {
   overflow-y: scroll;
   min-width: 941px;
-  background: #FBFBFB; }
+  background: #FBFBFB;
+  font-family: "Myriad pro"; }
 
 .block_page {
   background-color: #FBFBFB; }
@@ -60,7 +61,6 @@ body {
   border: 1px solid #E8E8E8;
   background: white url(../img/search/icon.png) no-repeat 9px;
   border-radius: 2px;
-  font-family: "Myriad Pro";
   font-size: 15px; }
 
 .search_input {
@@ -193,7 +193,6 @@ body {
   cursor: pointer;
   background: white url(../img/user/signUp.png) no-repeat 30px 9px;
   padding: 20px 0 0 0;
-  font-family: "Myriad Pro";
   font-size: 14px;
   color: #989898;
   width: 78px;
@@ -243,7 +242,6 @@ body {
 
 .mainMenu_item_label {
   font-size: 16px;
-  font-family: "Myriad pro";
   font-weight: 600; }
 
 .mainMenu_item_icon.home {
@@ -314,7 +312,8 @@ body {
   display: inline-block;
   height: 370px;
   margin-left: 12px;
-  vertical-align: top; }
+  vertical-align: top;
+  width: 504px; }
 
 .block_news {
   padding-top: 12px;
@@ -328,7 +327,6 @@ body {
 .subMenu_container {
   letter-spacing: -0.3em;
   width: 162px;
-  font-family: "Myriad Pro";
   font-size: 11px;
   color: #777;
   font-weight: bold; }
@@ -400,8 +398,8 @@ body {
 .slider_menu_item {
   display: block;
   float: left;
-  min-width: 63px;
-  padding: 0 7px;
+  min-width: 65px;
+  padding: 0 6px;
   height: 28px;
   line-height: 28px;
   text-align: center;
@@ -428,12 +426,12 @@ body {
   position: relative;
   clear: both;
   padding-top: 18px;
-  font-family: "Myriad Pro";
   font-weight: 600;
   color: white; }
 
 .slider_pic {
-  list-style: none; }
+  list-style: none;
+  height: 226px; }
 
 .slider_paginator {
   letter-spacing: -0.3em;
@@ -475,6 +473,33 @@ body {
       display: none; }
     .slider_pageNumber.selected + .slider_pageNumber:after {
       display: none; }
+
+.slider_content {
+  border: 1px solid #EEE;
+  border-right: 0;
+  padding: 9px 0 11px 13px;
+  box-sizing: border-box;
+  height: 53px;
+  width: 451px;
+  float: left; }
+
+.slider_content_title {
+  color: #555;
+  font-size: 16px;
+  font-weight: bold; }
+
+.slider_content_description {
+  color: #555;
+  font-size: 12px; }
+
+.slider_pause {
+  display: inline-block;
+  float: right;
+  width: 51px;
+  height: 51px;
+  border: 1px solid #EEE;
+  background: url(../img/icons/pause.png) no-repeat center;
+  cursor: pointer; }
 
 .block_footer {
   background-color: #1F1F1F;
