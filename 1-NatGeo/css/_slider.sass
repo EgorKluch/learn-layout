@@ -32,16 +32,22 @@
       display: block
       text-align: center
 
-.slider_pics_container
+.slider_slides_container
   position: relative
   clear: both
-  padding-top: 18px
   font-weight: 600
   color: white
+
+.slider_slide
+  position: absolute
+  top: 18px
+  display: none
 
 .slider_pic
   list-style: none
   height: 226px
+  width: 504px
+  overflow: hidden
 
 .slider_paginator
   @include hideSpaces()
@@ -50,40 +56,50 @@
   top: 0
   left: 0
 
-.slider_paginator_container
+.bjqs-markers
   @include hideSpaces()
   padding-top: 18px
   text-align: right
+  position: absolute
+  top: 0
+  width: 100%
 
-.slider_pageNumber
-  display: inline-block
-  line-height: 30px
-  text-align: center
-  height: 30px
-  width: 26px
-  background-color: #555
-  cursor: pointer
-
-  &:after
-    content: ''
+  a
+    @extend .disableSelectText
+    color: white
+    text-decoration: none
     display: block
-    height: 19px
-    width: 1px
-    margin-top: -25px
-    background-color: #717171
+    height: 100%
 
-  &:first-child:after
-    display: none
-
-  &.selected
-    background: #fdcc05
-    cursor: default
+  li
+    display: inline-block
+    line-height: 30px
+    text-align: center
+    height: 30px
+    width: 26px
+    background-color: #555
+    cursor: pointer
 
     &:after
+      content: ''
+      display: block
+      height: 19px
+      width: 1px
+      margin-top: -25px
+      background-color: #717171
+
+    &:first-child:after
       display: none
 
-    + .slider_pageNumber:after
-      display: none
+    &.active-marker
+      background: #fdcc05
+      cursor: default
+
+      &:after
+        display: none
+
+      + .li:after
+        display: none
 
 .slider_content
   border: 1px solid #EEE
@@ -106,6 +122,8 @@
 .slider_pause
   display: inline-block
   float: right
+  position: relative
+  top: 24px
   width: 51px
   height: 51px
   border: 1px solid #EEE

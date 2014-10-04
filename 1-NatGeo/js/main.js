@@ -15,8 +15,13 @@ $(document).ready(function () {
   $('#sliderMenu').menu({
     items: '.slider_menu_item'
   });
-  $('#sliderPaginator').menu({
-    items: '.slider_pageNumber'
-  });
   $('#search').searchInput();
+
+  $('#slider').bjqs({
+    showcontrols: false,
+    usecaptions: false,
+    keyboardnav: false,
+    width: 504,
+    height: 226
+  });
 });

@@ -5,9 +5,9 @@
   <title>National Geographic</title>
 
   <script src="../lib/jquery.min.js"></script>
+  <script src="./lib/bjqs.js"></script>
   <script src="../js/menu.js"></script>
   <script src="./js/search.js"></script>
-  <script src="./js/main.js"></script>
 
   <link rel="stylesheet" href="css/main.css">
 </head>
@@ -128,21 +128,44 @@
               <li class="slider_menu_item">Travel</li>
             </ul>
           </div>
-          <div class="slider_pics_container">
-            <ul class="slider_pics">
-              <li class="slider_pic"><img src="./img/etc/sliderPic.jpg"></li>
+          <div class="slider_slides_container" id="slider">
+            <ul class="slider_slides bjqs">
+              <li class="slider_slide">
+                <img class="slider_pic" src="./img/etc/slider_1.jpg">
+                <div class="slider_content">
+                  <div class="slider_content_title">Львята играют</div>
+                  <div class="slider_content_description">Африканские львята играют в траве в дельте Окаванго.</div>
+                </div>
+              </li>
+              <li class="slider_slide">
+                <img class="slider_pic" src="./img/etc/slider_2.jpg">
+                <div class="slider_content">
+                  <div class="slider_content_title">Ценный кадр</div>
+                  <div class="slider_content_description">Присоединяйтесь к нашему фотоклубу и покажите свои лучшие снимки!</div>
+                </div>
+              </li>
+              <li class="slider_slide">
+                <img class="slider_pic" src="./img/etc/slider_3.jpg">
+                <div class="slider_content">
+                  <div class="slider_content_title">Дороги мира</div>
+                  <div class="slider_content_description">Cамые красивые маршруты для путешествий на автомобиле.</div>
+                </div>
+              </li>
+              <li class="slider_slide">
+                <img class="slider_pic" src="./img/etc/slider_4.jpg">
+                <div class="slider_content">
+                  <div class="slider_content_title">Переход через Мару</div>
+                  <div class="slider_content_description">Ежегодно почти два миллиона антилоп гну и зебр, рискуя жизнью, пересекают кишащую крокодилами реку на границе Кении и Танзании.</div>
+                </div>
+              </li>
+              <li class="slider_slide">
+                <img class="slider_pic" src="./img/etc/slider_5.jpg">
+                <div class="slider_content">
+                  <div class="slider_content_title">Осень – время собирать урожай.</div>
+                  <div class="slider_content_description">Мы нашли фотографии самых красивых полей и плантаций.</div>
+                </div>
+              </li>
             </ul>
-            <div class="slider_paginator">
-              <ul class="slider_paginator_container" id="sliderPaginator">
-                <li class="slider_pageNumber selected">1</li>
-                <li class="slider_pageNumber">2</li>
-                <li class="slider_pageNumber">3</li>
-              </ul>
-            </div>
-          </div>
-          <div class="slider_content">
-            <div class="slider_content_title">Lion Cubs Playing</div>
-            <div class="slider_content_description">African lion cubs play in the grass in the Okavango Delta.</div>
           </div>
           <div class="slider_pause"></div>
         </div>
@@ -172,5 +195,6 @@
     </div>
 
   </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>
