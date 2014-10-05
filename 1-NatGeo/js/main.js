@@ -21,6 +21,7 @@ $(document).ready(function () {
     slider: '.slider_slides',
     slides: '.slider_slide',
     markers: '.slider_index',
+    control: '.slider_control',
     nextTime: 5000
   });
 });
