@@ -62,7 +62,7 @@ $.fn.slider = function (options) {
     function () { isHover = true; },
     function () { isHover = false; }
   );
-  $control.hover(
+  $(options.markers).hover(
     function () { isHover = true; },
     function () { isHover = false; }
   );

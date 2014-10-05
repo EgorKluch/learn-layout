@@ -9,6 +9,7 @@
   <script src="../js/menu.js"></script>
   <script src="./js/search.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="./js/newsOrder.js"></script>
   <script src="./js/main.js"></script>
 
   <link rel="stylesheet" href="css/main.css">
@@ -182,7 +183,22 @@
         </div>
 
         <div class="block_news">
-          <div class="news_filter"></div>
+          <div class="news_filters">
+            <div class="news_latest">Latest News</div>
+            <div class="news_order" id="newsOrder">
+              <div class="news_order_label"></div>
+              <ul class="news_order_list">
+                <li class="news_order_list_item">Most Viewed</li>
+                <li class="news_order_list_item">Most Recent</li>
+                <li class="news_order_list_item">Most Discussed</li>
+                <li class="news_order_list_item">Most Rated</li>
+              </ul>
+            </div>
+            <ul class="news_displayModes" id="displayModes">
+              <li class="news_displayMode list"></li>
+              <li class="news_displayMode grid"></li>
+            </ul>
+          </div>
           <div class="news_content"></div>
         </div>
       </div>

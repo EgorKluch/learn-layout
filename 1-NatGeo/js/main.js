@@ -15,6 +15,10 @@ $(document).ready(function () {
   $('#sliderMenu').menu({
     items: '.slider_menu_item'
   });
+  $('#displayModes').menu({
+    items: '.news_displayMode'
+  });
+
   $('#search').searchInput();
 
   $('#slider').slider({
@@ -24,4 +28,6 @@ $(document).ready(function () {
     control: '.slider_control',
     nextTime: 5000
   });
+
+  $('#newsOrder').newsOrder();
 });
