@@ -62,6 +62,10 @@ $.fn.slider = function (options) {
     function () { isHover = true; },
     function () { isHover = false; }
   );
+  $control.hover(
+    function () { isHover = true; },
+    function () { isHover = false; }
+  );
 
   $control.click(function () {
     if ('play' === state) {
