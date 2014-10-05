@@ -32,11 +32,16 @@
       display: block
       text-align: center
 
+
 .slider_slides_container
   position: relative
   clear: both
   font-weight: 600
   color: white
+
+.slider_slides
+  width: 504px
+  height: 226px
 
 .slider_slide
   position: absolute
@@ -50,56 +55,47 @@
   overflow: hidden
 
 .slider_paginator
-  @include hideSpaces()
   width: 100%
   position: absolute
   top: 0
   left: 0
 
-.bjqs-markers
-  @include hideSpaces()
-  padding-top: 18px
+.slider_paginator_container
   text-align: right
-  position: absolute
-  top: 0
-  width: 100%
+  @include hideSpaces()
 
-  a
-    @extend .disableSelectText
-    color: white
-    text-decoration: none
+.slider_index
+  @extend .disableSelectText
+  text-align: center
+  margin-top: 18px
+  display: inline-block
+  line-height: 30px
+  height: 30px
+  width: 26px
+  background-color: #555
+  color: white
+  cursor: pointer
+
+  &:after
+    content: ''
     display: block
-    height: 100%
+    height: 19px
+    width: 1px
+    margin-top: -25px
+    background-color: #717171
 
-  li
-    display: inline-block
-    line-height: 30px
-    text-align: center
-    height: 30px
-    width: 26px
-    background-color: #555
-    cursor: pointer
+  &:first-child:after
+    display: none
+
+  &.selected
+    background: #fdcc05
+    cursor: default
 
     &:after
-      content: ''
-      display: block
-      height: 19px
-      width: 1px
-      margin-top: -25px
-      background-color: #717171
-
-    &:first-child:after
       display: none
 
-    &.active-marker
-      background: #fdcc05
-      cursor: default
-
-      &:after
-        display: none
-
-      + .li:after
-        display: none
+    + &:after
+      display: none
 
 .slider_content
   border: 1px solid #EEE

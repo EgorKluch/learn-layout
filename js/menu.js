@@ -6,12 +6,29 @@
 'use strict';
 
 $.fn.menu = function (options) {
+  var self = this;
   var $menuItems = $(options.items, this);
 
-  $menuItems.click(function () {
-    var $this = $(this);
-    if ($this.hasClass('selected')) return;
+  this.selectItem = function (item) {
+    var $item;
+    if (_.isNumber(item)) {
+      $item = $menuItems.eq(item);
+    } else {
+      $item = $(item);
+    }
+
+    if ($item.hasClass('selected')) return;
     $menuItems.removeClass('selected');
-    $(this).addClass('selected');
+    $item.addClass('selected');
+
+    if (options.onSelect) options.onSelect($item);
+  };
+
+  $menuItems.click(function () {
+    self.selectItem(this);
   });
+
+  this.selectItem(options.selectedIndex || 0);
+
+  return this;
 };

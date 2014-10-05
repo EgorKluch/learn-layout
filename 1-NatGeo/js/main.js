@@ -17,11 +17,10 @@ $(document).ready(function () {
   });
   $('#search').searchInput();
 
-  $('#slider').bjqs({
-    showcontrols: false,
-    usecaptions: false,
-    keyboardnav: false,
-    width: 504,
-    height: 226
+  $('#slider').slider({
+    slider: '.slider_slides',
+    slides: '.slider_slide',
+    markers: '.slider_index',
+    nextTime: 5000
   });
 });

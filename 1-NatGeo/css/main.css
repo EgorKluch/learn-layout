@@ -1,4 +1,4 @@
-.disableSelectText, .search_category_label, .search_category_selectAll, .search_category_listItem, .bjqs-markers a {
+.disableSelectText, .search_category_label, .search_category_selectAll, .search_category_listItem, .slider_index {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -429,6 +429,10 @@ body {
   font-weight: 600;
   color: white; }
 
+.slider_slides {
+  width: 504px;
+  height: 226px; }
+
 .slider_slide {
   position: absolute;
   top: 18px;
@@ -441,52 +445,43 @@ body {
   overflow: hidden; }
 
 .slider_paginator {
-  letter-spacing: -0.3em;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0; }
-  .slider_paginator > * {
+
+.slider_paginator_container {
+  text-align: right;
+  letter-spacing: -0.3em; }
+  .slider_paginator_container > * {
     letter-spacing: normal; }
 
-.bjqs-markers {
-  letter-spacing: -0.3em;
-  padding-top: 18px;
-  text-align: right;
-  position: absolute;
-  top: 0;
-  width: 100%; }
-  .bjqs-markers > * {
-    letter-spacing: normal; }
-  .bjqs-markers a {
-    color: white;
-    text-decoration: none;
+.slider_index {
+  text-align: center;
+  margin-top: 18px;
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  width: 26px;
+  background-color: #555;
+  color: white;
+  cursor: pointer; }
+  .slider_index:after {
+    content: "";
     display: block;
-    height: 100%; }
-  .bjqs-markers li {
-    display: inline-block;
-    line-height: 30px;
-    text-align: center;
-    height: 30px;
-    width: 26px;
-    background-color: #555;
-    cursor: pointer; }
-    .bjqs-markers li:after {
-      content: "";
-      display: block;
-      height: 19px;
-      width: 1px;
-      margin-top: -25px;
-      background-color: #717171; }
-    .bjqs-markers li:first-child:after {
+    height: 19px;
+    width: 1px;
+    margin-top: -25px;
+    background-color: #717171; }
+  .slider_index:first-child:after {
+    display: none; }
+  .slider_index.selected {
+    background: #fdcc05;
+    cursor: default; }
+    .slider_index.selected:after {
       display: none; }
-    .bjqs-markers li.active-marker {
-      background: #fdcc05;
-      cursor: default; }
-      .bjqs-markers li.active-marker:after {
-        display: none; }
-      .bjqs-markers li.active-marker + .li:after {
-        display: none; }
+    + .slider_index.selected:after {
+      display: none; }
 
 .slider_content {
   border: 1px solid #EEE;
