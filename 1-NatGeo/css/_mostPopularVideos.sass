@@ -1,0 +1,32 @@
+@import "newsInfo"
+
+.popularVideos_title
+  @extend .popularNews_title
+  margin-top: 18px
+  background: white url(../img/icons/video.png) no-repeat 8px center
+
+.popularVideos_item
+  position: relative
+  margin-top: 6px
+  box-sizing: border-box
+  width: 224px
+  height: 111px
+  border: 1px solid #EEE
+  padding: 4px
+
+  .info
+    position: absolute
+    bottom: 0
+    box-sizing: border-box
+    height: 51px
+    width: 214px
+    background: url(../img/icons/bigPlay.png) no-repeat 171px 0
+    padding: 13px 9px
+    color: white
+
+  .title
+    font-size: 13px
+    font-weight: bold
+
+  .views
+    font-size: 11px
