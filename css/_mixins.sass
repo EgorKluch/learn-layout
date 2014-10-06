@@ -5,10 +5,13 @@
   #{$selector}:-ms-input-placeholder
     @content
 
-=hideSpaces ($normalSpacing: 'normal')
-  letter-spacing: -0.3em
+=setLetterSpacing ($spacing, $normalSpacing: 'normal')
+  letter-spacing: $spacing
   > *
     letter-spacing: #{$normalSpacing}
+
+=hideSpaces ($normalSpacing: 'normal')
+  @include setLetterSpacing(-0.3em, $normalSpacing)
 
 .disableSelectText
   -webkit-touch-callout: none

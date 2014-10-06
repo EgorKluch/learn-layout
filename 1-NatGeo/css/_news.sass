@@ -1,9 +1,12 @@
+.block_news
+  position: relative
+  top: -44px
+
 .news_filters
   box-sizing: border-box
   width: 504px
   height: 32px
   position: relative
-  top: -44px
   left: 190px
   border: 1px solid #EEE
   background: white
@@ -107,3 +110,71 @@
   &.selected
     background-color: #fdcc05
     cursor: default
+
+.news_content
+  margin-top: 12px 
+  @include setLetterSpacing(11px)
+
+.news_item
+  display: inline-block
+  overflow: hidden
+  box-sizing: border-box
+  width: 340px
+  height: 240px
+  border: 1px solid #EEE
+  padding: 4px
+  background: white
+
+.news_item_header
+  box-sizing: border-box
+  width: 329px
+  height: 148px
+  border: 1px solid #EEE
+  background: #FBFBFB
+  padding: 4px
+
+.news_item_title,
+.news_item_date
+  float: left
+  width: 240px
+
+.news_item_rating,
+.news_item_votes
+  float: right
+  width: 75px
+
+.news_item_title
+  color: #777
+  font-size: 14px
+  font-weight: 600
+
+.news_item_date
+  color: #a0a0a0
+  font-size: 11px
+
+.news_item_votes
+  @extend .news_item_date
+
+.news_item_rating
+  @include hideSpaces()
+
+  @each $rating in 1, 2, 3, 4, 5
+    &[data-rating="#{$rating}"]
+      .news_item_rating_star:nth-child(-n+#{$rating})
+        background: url(../img/icons/starFill.png) no-repeat
+
+.news_item_rating_star
+  display: inline-block
+  width: 13px
+  height: 13px
+  background: url(../img/icons/starVoid.png) no-repeat
+  margin-right: 2px
+
+  &:last-child
+    margin-right: 0
+
+.news_item_description
+  font-size: 12px
+  color: #989898
+  text-align: justify
+  padding: 10px 3px
