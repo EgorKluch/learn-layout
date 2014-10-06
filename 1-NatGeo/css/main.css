@@ -687,7 +687,7 @@ body {
   width: 13px;
   height: 13px;
   background: url(../img/icons/starVoid.png) no-repeat;
-    background-margin-right: 2px; }
+  margin-right: 2px; }
   .news_item_rating_star:last-child {
     margin-right: 0; }
 
