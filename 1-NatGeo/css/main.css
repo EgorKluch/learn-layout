@@ -295,7 +295,10 @@ body {
   background: #FBFBFB url(../img/mainMenu/kids_selected.png) no-repeat center; }
 
 .block_content {
+  letter-spacing: -0.3em;
   margin-top: 30px; }
+  .block_content > * {
+    letter-spacing: normal; }
 
 .block_subMenu {
   width: 174px;
@@ -305,10 +308,16 @@ body {
 
 .content_left {
   display: inline-block;
-  padding-left: 12px;
   margin-bottom: 16px;
   width: 703px;
   border-right: 1px solid #EAEAEA; }
+
+.content_right {
+  display: inline-block;
+  margin-left: 13px;
+  box-sizing: border-box;
+  width: 224px;
+  vertical-align: top; }
 
 .block_slider {
   display: inline-block;
@@ -419,7 +428,7 @@ body {
       height: 11px;
       width: 22px;
       margin: auto;
-      background: url(../img/icons/arrowdown.png);
+      background: url(../img/icons/arrowdown.png) no-repeat;
       content: "a";
       display: block;
       text-align: center; }
@@ -515,6 +524,56 @@ body {
   background: white url(../img/icons/pause.png) no-repeat center; }
   .slider_control.pause {
     background: url(../img/icons/play.png) no-repeat center; }
+
+.newsInfo, .news_item_header, .popularNews_item {
+  box-sizing: border-box;
+  border: 1px solid #EEE;
+  background: #FBFBFB;
+  padding: 4px; }
+  .newsInfo .pic, .news_item_header .pic, .popularNews_item .pic {
+    display: block;
+    margin-bottom: 6px; }
+  .newsInfo .title, .news_item_header .title, .popularNews_item .title {
+    float: left;
+    color: #777;
+    font-size: 12px;
+    font-weight: 600;
+    padding-top: 2px;
+    height: 15px; }
+  .newsInfo .date, .news_item_header .date, .popularNews_item .date {
+    float: left;
+    color: #a0a0a0;
+    font-size: 11px; }
+  .newsInfo .votes, .news_item_header .votes, .popularNews_item .votes {
+    color: #a0a0a0;
+    font-size: 11px;
+    float: right;
+    width: 75px; }
+  .newsInfo .rating, .news_item_header .rating, .popularNews_item .rating {
+    letter-spacing: -0.3em;
+    float: right;
+    width: 75px;
+    height: 17px; }
+    .newsInfo .rating > *, .news_item_header .rating > *, .popularNews_item .rating > * {
+      letter-spacing: normal; }
+    .newsInfo .rating .star, .news_item_header .rating .star, .popularNews_item .rating .star {
+      display: inline-block;
+      width: 13px;
+      height: 13px;
+      background: url(../img/icons/starVoid.png) no-repeat;
+      margin-right: 2px; }
+      .newsInfo .rating .star:last-child, .news_item_header .rating .star:last-child, .popularNews_item .rating .star:last-child {
+        margin-right: 0; }
+    .newsInfo .rating[data-rating="1"] .star:nth-child(-n+1), .news_item_header .rating[data-rating="1"] .star:nth-child(-n+1), .popularNews_item .rating[data-rating="1"] .star:nth-child(-n+1) {
+      background: url(../img/icons/starFill.png) no-repeat; }
+    .newsInfo .rating[data-rating="2"] .star:nth-child(-n+2), .news_item_header .rating[data-rating="2"] .star:nth-child(-n+2), .popularNews_item .rating[data-rating="2"] .star:nth-child(-n+2) {
+      background: url(../img/icons/starFill.png) no-repeat; }
+    .newsInfo .rating[data-rating="3"] .star:nth-child(-n+3), .news_item_header .rating[data-rating="3"] .star:nth-child(-n+3), .popularNews_item .rating[data-rating="3"] .star:nth-child(-n+3) {
+      background: url(../img/icons/starFill.png) no-repeat; }
+    .newsInfo .rating[data-rating="4"] .star:nth-child(-n+4), .news_item_header .rating[data-rating="4"] .star:nth-child(-n+4), .popularNews_item .rating[data-rating="4"] .star:nth-child(-n+4) {
+      background: url(../img/icons/starFill.png) no-repeat; }
+    .newsInfo .rating[data-rating="5"] .star:nth-child(-n+5), .news_item_header .rating[data-rating="5"] .star:nth-child(-n+5), .popularNews_item .rating[data-rating="5"] .star:nth-child(-n+5) {
+      background: url(../img/icons/starFill.png) no-repeat; }
 
 .block_news {
   position: relative;
@@ -643,56 +702,14 @@ body {
     display: block; }
 
 .news_item_header {
-  box-sizing: border-box;
   width: 329px;
-  height: 148px;
-  border: 1px solid #EEE;
-  background: #FBFBFB;
-  padding: 4px; }
-
-.news_item_title,
-.news_item_date,
-.news_item_votes {
-  float: left;
-  width: 240px; }
-
-.news_item_rating,
-.news_item_votes {
-  float: right;
-  width: 75px; }
-
-.news_item_title {
-  color: #777;
-  font-size: 14px;
-  font-weight: 600; }
-
-.news_item_date, .news_item_votes {
-  color: #a0a0a0;
-  font-size: 11px; }
-
-.news_item_rating {
-  letter-spacing: -0.3em; }
-  .news_item_rating > * {
-    letter-spacing: normal; }
-  .news_item_rating[data-rating="1"] .news_item_rating_star:nth-child(-n+1) {
-    background: url(../img/icons/starFill.png) no-repeat; }
-  .news_item_rating[data-rating="2"] .news_item_rating_star:nth-child(-n+2) {
-    background: url(../img/icons/starFill.png) no-repeat; }
-  .news_item_rating[data-rating="3"] .news_item_rating_star:nth-child(-n+3) {
-    background: url(../img/icons/starFill.png) no-repeat; }
-  .news_item_rating[data-rating="4"] .news_item_rating_star:nth-child(-n+4) {
-    background: url(../img/icons/starFill.png) no-repeat; }
-  .news_item_rating[data-rating="5"] .news_item_rating_star:nth-child(-n+5) {
-    background: url(../img/icons/starFill.png) no-repeat; }
-
-.news_item_rating_star {
-  display: inline-block;
-  width: 13px;
-  height: 13px;
-  background: url(../img/icons/starVoid.png) no-repeat;
-  margin-right: 2px; }
-  .news_item_rating_star:last-child {
-    margin-right: 0; }
+  height: 148px; }
+  .news_item_header .title,
+  .news_item_header .date {
+    width: 240px; }
+  .news_item_header .rating,
+  .news_item_header .votes {
+    width: 75px; }
 
 .news_item_description {
   font-size: 12px;
@@ -719,6 +736,26 @@ body {
 
 .news_item_more_icon {
   background: url(../img/icons/bigPlay.png) no-repeat center; }
+
+.popularNews_title, .popularVideos_title {
+  height: 30px;
+  border: 1px solid #EEE;
+  background: white url(../img/icons/popular.png) no-repeat 8px center;
+  padding-left: 33px;
+  line-height: 34px;
+  font-size: 12px;
+  color: #777; }
+
+.popularNews_item {
+  margin-top: 7px;
+  width: 224px;
+  height: 148px; }
+  .popularNews_item .title,
+  .popularNews_item .date {
+    width: 135px; }
+
+.popularVideos_title {
+  background: white url(../img/icons/video.png) no-repeat 8px center; }
 
 .block_footer {
   background-color: #1F1F1F;

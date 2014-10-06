@@ -1,0 +1,49 @@
+@include exports('newsInfo')
+  .newsInfo
+    box-sizing: border-box
+    border: 1px solid #EEE
+    background: #FBFBFB
+    padding: 4px
+
+    .pic
+      display: block
+      margin-bottom: 6px
+
+    .title
+      float: left
+      color: #777
+      font-size: 12px
+      font-weight: 600
+      padding-top: 2px
+      height: 15px
+
+    .date
+      float: left
+      color: #a0a0a0
+      font-size: 11px
+
+    .votes
+      color: #a0a0a0
+      font-size: 11px
+      float: right
+      width: 75px
+
+    .rating
+      @include hideSpaces()
+      float: right
+      width: 75px
+      height: 17px
+
+      .star
+        display: inline-block
+        width: 13px
+        height: 13px
+        background: url(../img/icons/starVoid.png) no-repeat
+        margin-right: 2px
+        &:last-child
+          margin-right: 0
+
+      @each $rating in 1, 2, 3, 4, 5
+        &[data-rating="#{$rating}"]
+          .star:nth-child(-n+#{$rating})
+            background: url(../img/icons/starFill.png) no-repeat

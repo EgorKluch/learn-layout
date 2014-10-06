@@ -1,0 +1,24 @@
+@import "newsInfo"
+
+.popularNews_title
+  height: 30px
+  border: 1px solid #EEE
+  background: white url(../img/icons/popular.png) no-repeat 8px center
+  padding-left: 33px
+  line-height: 34px
+  font-size: 12px
+  color: #777
+
+.popularNews_item
+  @extend .newsInfo
+  margin-top: 7px
+  width: 224px
+  height: 148px
+
+  .title,
+  .date
+    width: 135px
+
+.popularVideos_title
+  @extend .popularNews_title
+  background: white url(../img/icons/video.png) no-repeat 8px center
