@@ -178,7 +178,7 @@ body {
   top: 13px;
   width: 22px;
   height: 22px;
-  background: url(../img/search/go.png) no-repeat center;
+  background: url(../img/icons/next.png) no-repeat center;
   cursor: pointer; }
 
 .block_user {
@@ -737,7 +737,7 @@ body {
 .news_item_more_icon {
   background: url(../img/icons/bigPlus.png) no-repeat center; }
 
-.popularNews_title, .popularVideos_title {
+.popularNews_title, .popularVideos_title, .upcomingEvents_title {
   height: 30px;
   border: 1px solid #EEE;
   background: white url(../img/icons/popular.png) no-repeat 8px center;
@@ -754,7 +754,7 @@ body {
   .popularNews_item .date {
     width: 135px; }
 
-.popularVideos_title {
+.popularVideos_title, .upcomingEvents_title {
   margin-top: 18px;
   background: white url(../img/icons/video.png) no-repeat 8px center; }
 
@@ -780,6 +780,71 @@ body {
     font-weight: bold; }
   .popularVideos_item .views {
     font-size: 11px; }
+
+.upcomingEvents_title {
+  position: relative;
+  background: white url(../img/icons/events.png) no-repeat 8px center; }
+
+.upcomingEvents_prev, .upcomingEvents_next {
+  position: absolute;
+  top: 0;
+  right: 46px;
+  width: 21px;
+  height: 100%;
+  background: url(../img/icons/prev.png) no-repeat center; }
+
+.upcomingEvents_delimiter {
+  position: absolute;
+  top: 5px;
+  right: 37px;
+  background: #EAEAEA;
+  width: 1px;
+  height: 19px; }
+
+.upcomingEvents_next {
+  right: 7px;
+  width: 22px;
+  background: url(../img/icons/next.png) no-repeat center; }
+
+.upcomingEvents_event {
+  position: relative;
+  margin-top: 6px;
+  box-sizing: border-box;
+  width: 224px;
+  height: 146px;
+  border: 1px solid #EEE;
+  background: white;
+  padding: 0 5px; }
+
+.upcomingEvents_event_title {
+  height: 24px;
+  border-bottom: 1px solid #EAEAEA;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #777; }
+
+.upcomingEvents_event_pic {
+  display: block;
+  margin-top: 6px;
+  width: 213px;
+  height: 58px; }
+
+.upcomingEvents_event_date {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  height: 25px;
+  background: url(../img/icons/time_white.png) no-repeat 12px 0px;
+  padding-left: 30px;
+  line-height: 15px;
+  font-size: 10px;
+  color: white; }
+
+.upcomingEvents_event_description {
+  padding: 5px 0;
+  font-size: 11px;
+  color: #777; }
 
 .block_footer {
   background-color: #1F1F1F;
