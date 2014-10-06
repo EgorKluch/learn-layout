@@ -117,13 +117,19 @@
 
 .news_item
   display: inline-block
-  overflow: hidden
+  position: relative
+  margin-top: 12px
   box-sizing: border-box
   width: 340px
   height: 240px
   border: 1px solid #EEE
   padding: 4px
   background: white
+
+  &:hover
+    .news_item_more
+      display: block
+      // background: red
 
 .news_item_header
   box-sizing: border-box
@@ -165,7 +171,7 @@
 
 .news_item_rating_star
   display: inline-block
-  width: 13px 
+  width: 13px
   height: 13px
   background: url(../img/icons/starVoid.png) no-repeat
 
@@ -178,3 +184,26 @@
   color: #989898
   text-align: justify
   padding: 10px 3px
+
+.news_item_more
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  width: 340px
+  height: 240px
+  cursor: pointer
+
+.news_item_more_border
+  @extend .news_item_more
+  box-sizing: border-box
+  border: 1px solid #fbd128
+
+.news_item_more_bg
+  @extend .news_item_more
+  background: #fdcc05
+  opacity: 0.5
+
+.news_item_more_icon
+  @extend .news_item_more
+  background: url(../img/icons/bigPlay.png) no-repeat center

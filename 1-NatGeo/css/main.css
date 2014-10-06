@@ -631,13 +631,16 @@ body {
 
 .news_item {
   display: inline-block;
-  overflow: hidden;
+  position: relative;
+  margin-top: 12px;
   box-sizing: border-box;
   width: 340px;
   height: 240px;
   border: 1px solid #EEE;
   padding: 4px;
   background: white; }
+  .news_item:hover .news_item_more, .news_item:hover .news_item_more_border, .news_item:hover .news_item_more_bg, .news_item:hover .news_item_more_icon {
+    display: block; }
 
 .news_item_header {
   box-sizing: border-box;
@@ -696,6 +699,26 @@ body {
   color: #989898;
   text-align: justify;
   padding: 10px 3px; }
+
+.news_item_more, .news_item_more_border, .news_item_more_bg, .news_item_more_icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 240px;
+  cursor: pointer; }
+
+.news_item_more_border {
+  box-sizing: border-box;
+  border: 1px solid #fbd128; }
+
+.news_item_more_bg {
+  background: #fdcc05;
+  opacity: 0.5; }
+
+.news_item_more_icon {
+  background: url(../img/icons/bigPlay.png) no-repeat center; }
 
 .block_footer {
   background-color: #1F1F1F;
