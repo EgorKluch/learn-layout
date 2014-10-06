@@ -341,10 +341,10 @@ body {
   height: 19px;
   border: 1px solid #EEE;
   padding-top: 49px;
-  margin-bottom: 5px;
+  margin-top: 5px;
   cursor: pointer;
   text-align: center; }
-  .subMenu_item:nth-child(9), .subMenu_item:last-child {
+  .subMenu_item:last-child, .subMenu_item:nth-child(2) {
     margin: 0; }
   .subMenu_item.selected {
     border-color: #555;
@@ -687,7 +687,7 @@ body {
   width: 13px;
   height: 13px;
   background: url(../img/icons/starVoid.png) no-repeat;
-  margin-right: 2px; }
+    background-margin-right: 2px; }
   .news_item_rating_star:last-child {
     margin-right: 0; }
 
