@@ -7,7 +7,6 @@
 $pageColor: #FBFBFB
 $borderColor: #EAEAEA
 $pageWidth: 941px
-$pageLeft: $pageWidth / 2
 
 body
   overflow-y: scroll
@@ -19,10 +18,9 @@ body
   background-color: $pageColor
 
 .page_container
-  position: absolute
-  left: 50%
+  position: relative
   width: $pageWidth
-  margin-left: -$pageLeft
+  margin: auto
 
   @media (max-width: $pageWidth)
     left: 0,

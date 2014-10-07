@@ -29,10 +29,9 @@ body {
   background-color: #FBFBFB; }
 
 .page_container {
-  position: absolute;
-  left: 50%;
+  position: relative;
   width: 941px;
-  margin-left: -470.5px; }
+  margin: auto; }
   @media (max-width: 941px) {
     .page_container {
       left: 0;
@@ -49,12 +48,12 @@ body {
     cursor: pointer; }
   .header .search {
     position: absolute;
-    left: 351px;
-    top: 37px; }
+    top: 37px;
+    right: 186px; }
   .header .user {
     position: absolute;
     top: 37px;
-    left: 818px; }
+    right: 0; }
 
 .search {
   box-sizing: border-box;
@@ -902,11 +901,6 @@ body {
 .footer {
   background-color: #1F1F1F;
   height: 70px;
-  width: 100%;
-  color: white;
-  display: block;
-  padding: 0 40px;
-  position: relative;
-  left: -40px; }
+  width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
