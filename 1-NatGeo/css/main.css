@@ -589,6 +589,36 @@ body {
       .news_order .label.active:before {
         display: none; }
 
+.rating {
+  letter-spacing: -0.3em;
+  width: 75px;
+  height: 17px; }
+  .rating > * {
+    letter-spacing: normal; }
+  .rating .star {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url(../img/icons/starVoid.png) no-repeat;
+    margin-right: 2px; }
+    .rating .star:last-child {
+      margin-right: 0; }
+  .rating[data-rating="1"] .star:nth-child(-n+1) {
+    background: url(../img/icons/starFill.png) no-repeat; }
+  .rating[data-rating="2"] .star:nth-child(-n+2) {
+    background: url(../img/icons/starFill.png) no-repeat; }
+  .rating[data-rating="3"] .star:nth-child(-n+3) {
+    background: url(../img/icons/starFill.png) no-repeat; }
+  .rating[data-rating="4"] .star:nth-child(-n+4) {
+    background: url(../img/icons/starFill.png) no-repeat; }
+  .rating[data-rating="5"] .star:nth-child(-n+5) {
+    background: url(../img/icons/starFill.png) no-repeat; }
+
+.votes {
+  color: #a0a0a0;
+  font-size: 11px;
+  width: 75px; }
+
 .newsInfo, .news_item_header, .popularNews_item {
   box-sizing: border-box;
   border: 1px solid #EEE;
@@ -608,36 +638,11 @@ body {
     float: left;
     color: #a0a0a0;
     font-size: 11px; }
-  .newsInfo .votes, .news_item_header .votes, .popularNews_item .votes {
-    color: #a0a0a0;
-    font-size: 11px;
-    float: right;
-    width: 75px; }
-  .newsInfo .rating, .news_item_header .rating, .popularNews_item .rating {
-    letter-spacing: -0.3em;
-    float: right;
-    width: 75px;
-    height: 17px; }
-    .newsInfo .rating > *, .news_item_header .rating > *, .popularNews_item .rating > * {
-      letter-spacing: normal; }
-    .newsInfo .rating .star, .news_item_header .rating .star, .popularNews_item .rating .star {
-      display: inline-block;
-      width: 13px;
-      height: 13px;
-      background: url(../img/icons/starVoid.png) no-repeat;
-      margin-right: 2px; }
-      .newsInfo .rating .star:last-child, .news_item_header .rating .star:last-child, .popularNews_item .rating .star:last-child {
-        margin-right: 0; }
-    .newsInfo .rating[data-rating="1"] .star:nth-child(-n+1), .news_item_header .rating[data-rating="1"] .star:nth-child(-n+1), .popularNews_item .rating[data-rating="1"] .star:nth-child(-n+1) {
-      background: url(../img/icons/starFill.png) no-repeat; }
-    .newsInfo .rating[data-rating="2"] .star:nth-child(-n+2), .news_item_header .rating[data-rating="2"] .star:nth-child(-n+2), .popularNews_item .rating[data-rating="2"] .star:nth-child(-n+2) {
-      background: url(../img/icons/starFill.png) no-repeat; }
-    .newsInfo .rating[data-rating="3"] .star:nth-child(-n+3), .news_item_header .rating[data-rating="3"] .star:nth-child(-n+3), .popularNews_item .rating[data-rating="3"] .star:nth-child(-n+3) {
-      background: url(../img/icons/starFill.png) no-repeat; }
-    .newsInfo .rating[data-rating="4"] .star:nth-child(-n+4), .news_item_header .rating[data-rating="4"] .star:nth-child(-n+4), .popularNews_item .rating[data-rating="4"] .star:nth-child(-n+4) {
-      background: url(../img/icons/starFill.png) no-repeat; }
-    .newsInfo .rating[data-rating="5"] .star:nth-child(-n+5), .news_item_header .rating[data-rating="5"] .star:nth-child(-n+5), .popularNews_item .rating[data-rating="5"] .star:nth-child(-n+5) {
-      background: url(../img/icons/starFill.png) no-repeat; }
+  .newsInfo .votes, .news_item_header .votes, .popularNews_item .votes,
+  .newsInfo .rating,
+  .news_item_header .rating,
+  .popularNews_item .rating {
+    float: right; }
 
 .news_content {
   margin-top: 12px;
@@ -693,6 +698,65 @@ body {
 
 .news_item_more_icon {
   background: url(../img/icons/bigPlus.png) no-repeat center; }
+
+.magazine {
+  display: block;
+  position: relative;
+  float: left;
+  margin-left: 9.5px;
+  box-sizing: border-box;
+  width: 228px;
+  height: 200px;
+  border: 1px solid #EEE;
+  background: white;
+  padding-top: 6px; }
+  .magazine:first-child {
+    margin: 0; }
+  .magazine .title_wrapper {
+    margin: auto;
+    box-sizing: border-box;
+    width: 216px;
+    height: 147px;
+    border: 1px solid #EEE;
+    background: #FBFBFB;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; }
+  .magazine .title {
+    margin-top: 7px;
+    font-size: 13px;
+    color: #777; }
+  .magazine .rating {
+    width: auto;
+    margin: 12px 0 0 9px; }
+  .magazine .votes {
+    margin: 0 0 0 9px; }
+  .magazine .subscribeButton {
+    display: inline-block;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    box-sizing: border-box;
+    width: 103px;
+    height: 32px;
+    border: 1px solid #EEE;
+    background: url(../img/icons/subscribe3.png) no-repeat 8px center;
+    padding-left: 37px;
+    line-height: 32px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #777;
+    cursor: pointer; }
+    .magazine .subscribeButton:before {
+      content: "";
+      display: block;
+      position: relative;
+      float: left;
+      top: 6px;
+      right: 6px;
+      width: 1px;
+      height: 19px;
+      background: #EAEAEA; }
 
 .popularNews_title, .popularVideos_title, .upcomingEvents_title {
   height: 30px;

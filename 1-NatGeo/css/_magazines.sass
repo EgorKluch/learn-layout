@@ -1,0 +1,68 @@
+@import "rating"
+@import "votes"
+
+.magazine
+  display: block
+  position: relative
+  float: left
+  margin-left: 9.5px
+  box-sizing: border-box
+  width: 228px
+  height: 200px
+  border: 1px solid #EEE
+  background: white
+  padding-top: 6px
+
+  &:first-child
+    margin: 0
+
+  .title_wrapper
+    margin: auto
+    box-sizing: border-box
+    width: 216px
+    height: 147px
+    border: 1px solid #EEE
+    background: #FBFBFB
+    padding: 10px
+    text-align: center
+    cursor: pointer
+
+  .title
+    margin-top: 7px
+    font-size: 13px
+    color: #777
+
+  .rating
+    width: auto
+    margin: 12px 0 0 9px
+
+  .votes
+    margin: 0 0 0 9px
+
+  .subscribeButton
+    display: inline-block
+    position: absolute
+    bottom: -1px
+    right: -1px
+    box-sizing: border-box
+    width: 103px
+    height: 32px
+    border: 1px solid #EEE
+    background: url(../img/icons/subscribe3.png) no-repeat 8px center
+    padding-left: 37px
+    line-height: 32px
+    font-size: 12px
+    text-transform: uppercase
+    color: #777
+    cursor: pointer
+
+    &:before
+      content: ''
+      display: block
+      position: relative
+      float: left
+      top: 6px
+      right: 6px
+      width: 1px
+      height: 19px
+      background: #EAEAEA

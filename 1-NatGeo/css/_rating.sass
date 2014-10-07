@@ -1,0 +1,19 @@
+@include exports("rating")
+  .rating
+    @include hideSpaces()
+    width: 75px
+    height: 17px
+
+    .star
+      display: inline-block
+      width: 13px
+      height: 13px
+      background: url(../img/icons/starVoid.png) no-repeat
+      margin-right: 2px
+      &:last-child
+        margin-right: 0
+
+    @each $rating in 1, 2, 3, 4, 5
+      &[data-rating="#{$rating}"]
+        .star:nth-child(-n+#{$rating})
+          background: url(../img/icons/starFill.png) no-repeat
