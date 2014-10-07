@@ -6,9 +6,7 @@
 'use strict';
 
 $(document).ready(function () {
-  $('#mainMenu').menu({
-    items: '.mainMenu_item'
-  });
+  $('#mainMenu').menu();
   $('#subMenu').menu({
     items: '.subMenu_item'
   });

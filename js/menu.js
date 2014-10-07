@@ -7,7 +7,8 @@
 
 $.fn.menu = function (options) {
   var self = this;
-  var $menuItems = $(options.items, this);
+  options = options || {};
+  var $menuItems = $(options.items || 'li', this);
 
   this.selectItem = function (item) {
     var $item;

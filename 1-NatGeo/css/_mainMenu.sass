@@ -1,39 +1,40 @@
-.mainMenu_vertical
-  margin-top: 5px
-  height: 5px
-  width: 100%
-  background: #777
+.mainMenu
+  .container
+    position: relative
+    margin-top: -19px
 
-.mainMenu_container
-  position: relative
-  margin-top: -19px
+  .line
+    margin-top: 5px
+    height: 5px
+    width: 100%
+    background: #777
 
-.mainMenu_item
-  @extend .disableSelectText
-  display: inline-block
-  width: 114px
-  height: 70px
-  text-align: center
-  color: #555555
-  cursor: pointer
+  .item
+    @extend .disableSelectText
+    display: inline-block
+    width: 114px
+    height: 70px
+    text-align: center
+    color: #555555
+    cursor: pointer
 
-  &.selected
-    color: #fdcc05
-    cursor: default
+    &.selected
+      color: #fdcc05
+      cursor: default
 
-.mainMenu_item_icon
-  display: inline-block
-  width: 38px
-  height: 30px
-  margin-bottom: 11px
+  .item_icon
+    display: inline-block
+    width: 38px
+    height: 30px
+    margin-bottom: 11px
 
-.mainMenu_item_label
-  font-size: 16px
-  font-weight: bold
+  .item_label
+    font-size: 16px
+    font-weight: bold
 
-@each $itemName in home, photography, video, environment, travel, adventure, television, kids
-  .mainMenu_item_icon.#{$itemName}
-    background: $pageColor url(../img/mainMenu/#{$itemName}.png) no-repeat center
+  @each $itemName in home, photography, video, environment, travel, adventure, television, kids
+    .item_icon.#{$itemName}
+      background: $pageColor url(../img/mainMenu/#{$itemName}.png) no-repeat center
 
-  .mainMenu_item.selected .mainMenu_item_icon.#{$itemName}
-    background: $pageColor url(../img/mainMenu/#{$itemName}_selected.png) no-repeat center
+    .item.selected .item_icon.#{$itemName}
+      background: $pageColor url(../img/mainMenu/#{$itemName}_selected.png) no-repeat center
