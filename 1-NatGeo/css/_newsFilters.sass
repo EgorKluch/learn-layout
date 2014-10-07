@@ -1,0 +1,107 @@
+.news_filters
+  box-sizing: border-box
+  width: 504px
+  height: 32px
+  border: 1px solid #EEE
+  background: white
+
+  .labelLatest
+    @extend .disableSelectText
+    float: left
+    box-sizing: border-box
+    width: 117px
+    height: 30px
+    background: url(../img/icons/time.png) no-repeat 12px center
+    padding-left: 37px
+    line-height: 32px
+    font-size: 12px
+    font-weight: bold
+    color: #777
+
+  .list
+    display: none
+    position: absolute
+    top: 31px
+    border: 1px solid #F1F1F1
+    border-top: 0
+
+  .item
+    display: block
+    box-sizing: border-box
+    width: 140px
+    height: 35px
+    background: white
+    line-height: 35px
+    font-size: 15px
+    text-align: center
+    color: #999
+    cursor: pointer
+
+    &:hover
+      background: #555
+      color: white
+
+    &:first-child
+      height: 34px
+
+  .displayModes
+    @include hideSpaces()
+    display: inline-block
+    position: relative
+    float: right
+    width: 243px
+    text-align: right
+
+  .displayMode
+    display: inline-block
+    width: 40px
+    height: 30px
+    cursor: pointer
+
+    @each $displayMode in list, grid
+      &.displayMode__#{$displayMode}
+        background: #555 url(../img/icons/#{$displayMode}.png) no-repeat center
+
+    &.selected
+      background-color: #fdcc05
+      cursor: default
+
+.news_order
+  display: inline-block
+  position: relative
+  cursor: pointer
+  z-index: 10
+
+  .label
+    @extend .disableSelectText
+    float: left
+    margin-top: 3px
+    box-sizing: border-box
+    width: 142px
+    height: 28px
+    background: url(../img/icons/down.png) no-repeat 112px 9px
+    padding-left: 27px
+    line-height: 24px
+    font-size: 12px
+    color: #cacaca
+
+    &:before
+      content: ''
+      display: block
+      position: relative
+      float: left
+      left: -27px
+      margin-top: 3px
+      height: 19px
+      width: 1px
+      background: #EEE
+
+    &.active
+      border: 1px solid #F1F1F1
+      border-bottom: 0
+      background: url(../img/icons/downSelected.png) no-repeat 111px 8px
+      line-height: 22px
+      color: #a8a8a8
+
+      &:before
+        display: none

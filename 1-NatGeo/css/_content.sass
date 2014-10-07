@@ -2,12 +2,6 @@
   @include hideSpaces()
   margin-top: 30px
 
-.subMenu
-  width: 174px
-  height: 370px
-  border-right: 1px solid $borderColor
-  display: inline-block
-
 .page_left
   display: inline-block
   margin-bottom: 16px
@@ -21,16 +15,29 @@
   width: 224px
   vertical-align: top
 
+.subMenu
+  display: inline-block
+  float: left
+  width: 174px
+  height: 370px
+  border-right: 1px solid $borderColor
+
 .slider
   display: inline-block
-  height: 370px
+  width: 504px
+  height: 330px
   margin-left: 12px
   vertical-align: top
-  width: 504px
+
+.news_filters
+  display: inline-block
+  float: right
+  margin-top: 11px
+  margin-right: 12px
 
 .news
-  padding-top: 12px
   height: 503px
+  clear: both
 
 .magazines
   border-top: 1px solid $borderColor
@@ -39,4 +46,5 @@
 
 @import "subMenu"
 @import "slider"
+@import "newsFilters"
 @import "news"

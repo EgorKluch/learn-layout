@@ -6,9 +6,9 @@
 'use strict';
 
 $.fn.newsOrder = function () {
-  var $label = $('.news_order_label', this);
-  var $list = $('.news_order_list', this);
-  var $items = $('.news_order_list_item', this);
+  var $label = $('.label', this);
+  var $list = $('.list', this);
+  var $items = $('.item', this);
   var hideList = true;
 
   $label.click(function () {

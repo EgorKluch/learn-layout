@@ -9,9 +9,7 @@ $(document).ready(function () {
   $('#mainMenu').menu();
   $('#subMenu').menu();
   $('#sliderMenu').menu();
-  $('#displayModes').menu({
-    items: '.news_displayMode'
-  });
+  $('#displayModes').menu();
 
   $('#search').searchInput();
 
