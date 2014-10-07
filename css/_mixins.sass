@@ -5,9 +5,13 @@ $modules: () !default
     @content
 
 =placeholder($selector: '*')
-  #{$selector}::-webkit-input-placeholder,
-  #{$selector}:-moz-placeholder,
-  #{$selector}::-moz-placeholder,
+  // Невозможно задать стиль через запятую (браузеры удаляют неизвестные свойства)
+  #{$selector}::-webkit-input-placeholder
+    @content
+  #{$selector}:-moz-placeholder
+    @content
+  #{$selector}::-moz-placeholder
+    @content
   #{$selector}:-ms-input-placeholder
     @content
 

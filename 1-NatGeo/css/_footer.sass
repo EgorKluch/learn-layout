@@ -1,4 +1,98 @@
 .footer
-  background-color: #1F1F1F
-  height: 70px
+  background: url(../img/footer/bg.jpg)
   width: 100%
+
+.footer_subscribe
+  position: relative
+  top: 18px
+  left: 9px
+  width: 338px
+  height: 41px
+
+  .input
+    box-sizing: border-box
+    width: 338px
+    height: 41px
+    outline: none
+    border: none
+    background: url(../img/footer/subscribeInput.png)
+    padding-left: 9px
+    color: #848484
+
+  .submit
+    position: absolute
+    top: 3px
+    right: 2px
+    width: 103px
+    height: 38px
+    outline: none
+    border: none
+    background: url(../img/footer/subscribeButton.png)
+    text-transform: uppercase
+
+  @include placeholder('.input')
+    font-style: italic
+    color: #595959
+
+.footer_container
+  position: relative
+  background-color: #1F1F1F
+  margin: auto
+  width: $pageWidth
+  height: 70px
+
+.socials
+  display: inline-block
+  position: absolute
+  top: 25px
+  left: 342px
+  height: 28px
+
+  .facebook
+    float: left
+    margin: 0 3px 0 15px
+    height: 41px
+    width: 27px
+    background: url(../img/footer/fb.png) no-repeat
+    cursor: pointer
+
+  .twitter
+    float: left
+    margin-right: 9px
+    height: 41px
+    width: 31px
+    background: url(../img/footer/twitter.png) no-repeat
+    cursor: pointer
+
+  .youtube
+    float: left
+    height: 41px
+    width: 22px
+    background: url(../img/footer/youtube.png) no-repeat
+    cursor: pointer
+
+.footer_content
+  position: absolute
+  top: 0
+  right: 0
+
+  .copyright
+    clear: both
+    padding-top: 5px
+    text-align: center
+    font-size: 12px
+    color: #4a4a4a
+
+.footer_menu
+  margin-top: 23px
+
+  .item
+    display: block
+    padding: 0 9px
+    float: right
+    font-size: 12px
+    text-decoration: none
+    color: #BBB
+
+    &:hover
+      text-decoration: underline

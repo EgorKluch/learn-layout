@@ -21,4 +21,8 @@ $(document).ready(function () {
   });
 
   $('#newsOrder').newsOrder();
+
+  $('a, button').click(function () {
+    return false;
+  });
 });
