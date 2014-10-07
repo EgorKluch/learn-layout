@@ -286,13 +286,13 @@ body {
 .mainMenu_item.selected .mainMenu_item_icon.kids {
   background: #FBFBFB url(../img/mainMenu/kids_selected.png) no-repeat center; }
 
-.block_content {
+.content {
   letter-spacing: -0.3em;
   margin-top: 30px; }
-  .block_content > * {
+  .content > * {
     letter-spacing: normal; }
 
-.block_subMenu {
+.subMenu {
   width: 174px;
   height: 370px;
   border-right: 1px solid #EAEAEA;
@@ -311,18 +311,18 @@ body {
   width: 224px;
   vertical-align: top; }
 
-.block_slider {
+.slider {
   display: inline-block;
   height: 370px;
   margin-left: 12px;
   vertical-align: top;
   width: 504px; }
 
-.block_news {
+.news {
   padding-top: 12px;
   height: 503px; }
 
-.block_magazines {
+.magazines {
   border-top: 1px solid #EAEAEA;
   padding-top: 15px;
   height: 263px; }
@@ -567,7 +567,7 @@ body {
     .newsInfo .rating[data-rating="5"] .star:nth-child(-n+5), .news_item_header .rating[data-rating="5"] .star:nth-child(-n+5), .popularNews_item .rating[data-rating="5"] .star:nth-child(-n+5) {
       background: url(../img/icons/starFill.png) no-repeat; }
 
-.block_news {
+.news {
   position: relative;
   top: -44px; }
 
@@ -838,7 +838,7 @@ body {
   font-size: 11px;
   color: #777; }
 
-.block_footer {
+.footer {
   background-color: #1F1F1F;
   height: 70px;
   width: 100%;
