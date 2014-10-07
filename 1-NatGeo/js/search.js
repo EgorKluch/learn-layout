@@ -6,11 +6,12 @@
 'use strict';
 
 $.fn.searchInput = function () {
-  var $labelContainer = $('.search_category_labelContainer', this);
-  var $categoryContainer = $('#searchCategories', this);
-  var $categoryLabel = $('.search_category_label');
-  var $categoryItems = $('.search_category_listItem', this);
-  var $selectAllCategory = $('.search_category_selectAll', this);
+  var $searchCategory = $('.search_category', this);
+  var $labelContainer = $('.label_wrapper', $searchCategory);
+  var $categoryLabel = $('.label', $labelContainer);
+  var $listContainer = $('.list_wrapper', $searchCategory);
+  var $categoryItems = $('.list_item', $listContainer);
+  var $selectAllCategory = $('.selectAll', $listContainer);
   var clickedHover = false;
 
   var isSelectAll = function () {
@@ -46,10 +47,10 @@ $.fn.searchInput = function () {
 
   $labelContainer.click(function () {
     $labelContainer.toggleClass('active');
-    $categoryContainer.toggle();
+    $listContainer.toggle();
     clickedHover = true;
   });
-  $categoryContainer.click(function () {
+  $listContainer.click(function () {
     clickedHover = true;
   });
   $categoryItems.click(function () {
@@ -67,7 +68,7 @@ $.fn.searchInput = function () {
       return;
     }
     $labelContainer.removeClass('active');
-    $categoryContainer.hide();
+    $listContainer.hide();
   });
 
   return this;
