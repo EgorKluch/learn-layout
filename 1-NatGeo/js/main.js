@@ -7,9 +7,7 @@
 
 $(document).ready(function () {
   $('#mainMenu').menu();
-  $('#subMenu').menu({
-    items: '.subMenu_item'
-  });
+  $('#subMenu').menu();
   $('#sliderMenu').menu({
     items: '.slider_menu_item'
   });

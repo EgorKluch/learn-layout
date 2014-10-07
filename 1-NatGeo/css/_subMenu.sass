@@ -1,40 +1,43 @@
 $subMenuItems: dailyNews, magazine, maps, science, education, games, events, blogs, explorers, trips
 
-.subMenu_container
-  @include hideSpaces()
-  width: 162px
-  font-size: 11px
-  color: #777
-  font-weight: bold
-
-.subMenu_item
-  @extend .disableSelectText
-  display: inline-block
-  width: 76px
-  height: 68px - 49px
-  border: 1px solid #EEE
-  padding-top: 49px
-  margin-top: 5px
-  cursor: pointer
+.subMenu
+  .container
+    @include hideSpaces()
+    width: 162px
+    font-size: 11px
+    color: #777
+    font-weight: bold
 
 
-  &:last-child,
-  &:nth-child(2)
-    margin: 0
 
-  &.selected
-    border-color: #555
-    color: white
-    cursor: default
+  .item
+    @extend .disableSelectText
+    display: inline-block
+    margin-top: 5px
+    box-sizing: border-box
+    width: 76px
+    height: 70px
+    border: 1px solid #EEE
+    padding-top: 49px
+    text-align: center
+    cursor: pointer
 
-  &:nth-child(odd)
-    margin-right: 6px
 
-  text-align: center
+    &:last-child,
+    &:nth-child(2)
+      margin: 0
 
-  @each $itemName in $subMenuItems
-    &.#{$itemName}
-      background: white url(../img/subMenu/#{$itemName}.png) no-repeat 21px 10px
+    &.selected
+      border-color: #555
+      color: white
+      cursor: default
 
-    &.#{$itemName}.selected
-      background: #555 url(../img/subMenu/#{$itemName}_selected.png) no-repeat 21px 10px
+    &:nth-child(odd)
+      margin-right: 6px
+
+    @each $itemName in $subMenuItems
+      &.#{$itemName}
+        background: white url(../img/subMenu/#{$itemName}.png) no-repeat 21px 10px
+
+      &.#{$itemName}.selected
+        background: #555 url(../img/subMenu/#{$itemName}_selected.png) no-repeat 21px 10px

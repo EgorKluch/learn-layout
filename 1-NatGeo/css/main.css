@@ -1,4 +1,4 @@
-.disableSelectText, .search_category .label, .search_category .selectAll, .search_category .list .list_item, .mainMenu .item, .subMenu_item, .slider_menu_item, .slider_index, .news_latest, .news_order_label {
+.disableSelectText, .search_category .label, .search_category .selectAll, .search_category .list .list_item, .mainMenu .item, .subMenu .item, .slider_menu_item, .slider_index, .news_latest, .news_order_label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -307,71 +307,71 @@ body {
   padding-top: 15px;
   height: 263px; }
 
-.subMenu_container {
+.subMenu .container {
   letter-spacing: -0.3em;
   width: 162px;
   font-size: 11px;
   color: #777;
   font-weight: bold; }
-  .subMenu_container > * {
+  .subMenu .container > * {
     letter-spacing: normal; }
-
-.subMenu_item {
+.subMenu .item {
   display: inline-block;
+  margin-top: 5px;
+  box-sizing: border-box;
   width: 76px;
-  height: 19px;
+  height: 70px;
   border: 1px solid #EEE;
   padding-top: 49px;
-  margin-top: 5px;
-  cursor: pointer;
-  text-align: center; }
-  .subMenu_item:last-child, .subMenu_item:nth-child(2) {
+  text-align: center;
+  cursor: pointer; }
+  .subMenu .item:last-child, .subMenu .item:nth-child(2) {
     margin: 0; }
-  .subMenu_item.selected {
+  .subMenu .item.selected {
     border-color: #555;
     color: white;
     cursor: default; }
-  .subMenu_item:nth-child(odd) {
+  .subMenu .item:nth-child(odd) {
     margin-right: 6px; }
-  .subMenu_item.dailyNews {
+  .subMenu .item.dailyNews {
     background: white url(../img/subMenu/dailyNews.png) no-repeat 21px 10px; }
-  .subMenu_item.dailyNews.selected {
+  .subMenu .item.dailyNews.selected {
     background: #555 url(../img/subMenu/dailyNews_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.magazine {
+  .subMenu .item.magazine {
     background: white url(../img/subMenu/magazine.png) no-repeat 21px 10px; }
-  .subMenu_item.magazine.selected {
+  .subMenu .item.magazine.selected {
     background: #555 url(../img/subMenu/magazine_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.maps {
+  .subMenu .item.maps {
     background: white url(../img/subMenu/maps.png) no-repeat 21px 10px; }
-  .subMenu_item.maps.selected {
+  .subMenu .item.maps.selected {
     background: #555 url(../img/subMenu/maps_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.science {
+  .subMenu .item.science {
     background: white url(../img/subMenu/science.png) no-repeat 21px 10px; }
-  .subMenu_item.science.selected {
+  .subMenu .item.science.selected {
     background: #555 url(../img/subMenu/science_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.education {
+  .subMenu .item.education {
     background: white url(../img/subMenu/education.png) no-repeat 21px 10px; }
-  .subMenu_item.education.selected {
+  .subMenu .item.education.selected {
     background: #555 url(../img/subMenu/education_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.games {
+  .subMenu .item.games {
     background: white url(../img/subMenu/games.png) no-repeat 21px 10px; }
-  .subMenu_item.games.selected {
+  .subMenu .item.games.selected {
     background: #555 url(../img/subMenu/games_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.events {
+  .subMenu .item.events {
     background: white url(../img/subMenu/events.png) no-repeat 21px 10px; }
-  .subMenu_item.events.selected {
+  .subMenu .item.events.selected {
     background: #555 url(../img/subMenu/events_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.blogs {
+  .subMenu .item.blogs {
     background: white url(../img/subMenu/blogs.png) no-repeat 21px 10px; }
-  .subMenu_item.blogs.selected {
+  .subMenu .item.blogs.selected {
     background: #555 url(../img/subMenu/blogs_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.explorers {
+  .subMenu .item.explorers {
     background: white url(../img/subMenu/explorers.png) no-repeat 21px 10px; }
-  .subMenu_item.explorers.selected {
+  .subMenu .item.explorers.selected {
     background: #555 url(../img/subMenu/explorers_selected.png) no-repeat 21px 10px; }
-  .subMenu_item.trips {
+  .subMenu .item.trips {
     background: white url(../img/subMenu/trips.png) no-repeat 21px 10px; }
-  .subMenu_item.trips.selected {
+  .subMenu .item.trips.selected {
     background: #555 url(../img/subMenu/trips_selected.png) no-repeat 21px 10px; }
 
 .slider_menu {
