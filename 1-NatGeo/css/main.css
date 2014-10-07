@@ -110,15 +110,16 @@ body {
   position: absolute;
   top: 12px;
   margin-top: -6px;
-  color: #CACACA;
-  cursor: pointer;
-  height: 25px;
-  line-height: 25px;
   width: 126px;
+  height: 25px;
+  border-color: #EAEAEA;
+  border-style: solid;
+  border-width: 0 1px;
   background: url(../img/icons/down.png) no-repeat 110px;
-  border-right: 1px solid #EAEAEA;
-  border-left: 1px solid #EAEAEA;
-  padding-left: 12px; }
+  padding-left: 12px;
+  line-height: 25px;
+  color: #CACACA;
+  cursor: pointer; }
 .search_category .list_wrapper {
   display: none;
   position: absolute;
@@ -132,45 +133,43 @@ body {
   cursor: pointer;
   margin-top: 11px;
   margin-left: 5px;
-  padding-left: 25px;
   background: url(../img/search/category_selectAllUnchecked.png) no-repeat left center;
+  padding-left: 25px;
   color: #CCC;
   font-size: 14px; }
   .search_category .selectAll.checked {
     background-image: url(../img/search/category_selectAllChecked.png); }
 .search_category .list {
+  float: left;
   margin: 11px 0;
-  padding: 0;
   width: 140px;
-  float: left; }
+  padding: 0; }
   .search_category .list:first-child {
     padding-left: 4px;
     padding-right: 3px; }
   .search_category .list:nth-child(2) {
-    border-left: 1px solid #E9E9E9;
-    border-right: 1px solid #E9E9E9;
+    border-color: #E9E9E9;
+    border-style: solid;
+    border-width: 0 1px;
     padding: 0 3px; }
   .search_category .list:last-child {
     padding-left: 3px;
     padding-right: 4px; }
   .search_category .list .list_item {
-    height: 34px;
+    box-sizing: border-box;
+    width: 140px;
+    height: 35px;
     background: #ECECEC url(../img/search/category_x.png) no-repeat 8px;
-    line-height: 34px;
     padding-left: 30px;
     list-style: none;
+    line-height: 34px;
     color: #999;
     cursor: pointer; }
     .search_category .list .list_item:nth-child(odd) {
       background-color: #F4F4F4; }
     .search_category .list .list_item.bordered {
       border-top: 1px solid #DDD;
-      border-left: 1px solid #DDD;
-      width: 109px;
-      height: 33px; }
-    .search_category .list .list_item.bordered.selected {
-      width: 110px;
-      height: 34px; }
+      border-left: 1px solid #DDD; }
     .search_category .list .list_item.selected {
       border: none;
       background: #555 url(../img/search/category_selected.png) no-repeat 8px;
