@@ -1,4 +1,4 @@
-.disableSelectText, .search_category .label, .search_category .selectAll, .search_category .list .list_item, .mainMenu .item, .subMenu .item, .slider_menu_item, .slider_index, .news_latest, .news_order_label {
+.disableSelectText, .search_category .label, .search_category .selectAll, .search_category .list .list_item, .mainMenu .item, .subMenu .item, .slider_menu .item, .slider_paginator .marker, .news_latest, .news_order_label {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -265,10 +265,10 @@ body {
 .mainMenu .item.selected .item_icon.kids {
   background: #FBFBFB url(../img/mainMenu/kids_selected.png) no-repeat center; }
 
-.content {
+.page_content {
   letter-spacing: -0.3em;
   margin-top: 30px; }
-  .content > * {
+  .page_content > * {
     letter-spacing: normal; }
 
 .subMenu {
@@ -277,13 +277,13 @@ body {
   border-right: 1px solid #EAEAEA;
   display: inline-block; }
 
-.content_left {
+.page_left {
   display: inline-block;
   margin-bottom: 16px;
   width: 703px;
   border-right: 1px solid #EAEAEA; }
 
-.content_right {
+.page_right {
   display: inline-block;
   margin-left: 13px;
   box-sizing: border-box;
@@ -376,112 +376,102 @@ body {
 .slider_menu {
   font-size: 12px;
   color: #777; }
+  .slider_menu .item {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    min-width: 77px;
+    height: 28px;
+    border: 1px solid #EEE;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer; }
+    .slider_menu .item:last-child {
+      margin-right: 0; }
+    .slider_menu .item.selected {
+      border-color: #555;
+      background-color: #555;
+      color: white;
+      cursor: default; }
+      .slider_menu .item.selected:after {
+        height: 11px;
+        width: 22px;
+        margin: auto;
+        background: url(../img/icons/arrowdown.png) no-repeat;
+        content: "a";
+        display: block;
+        text-align: center; }
 
-.slider_menu_item {
-  display: block;
-  float: left;
-  min-width: 65px;
-  padding: 0 6px;
-  height: 28px;
-  line-height: 28px;
-  text-align: center;
-  border: 1px solid #EEE;
-  margin-right: 6px;
-  cursor: pointer; }
-  .slider_menu_item:last-child {
-    margin-right: 0; }
-  .slider_menu_item.selected {
-    border-color: #555;
-    background-color: #555;
-    color: white;
-    cursor: default; }
-    .slider_menu_item.selected:after {
-      height: 11px;
-      width: 22px;
-      margin: auto;
-      background: url(../img/icons/arrowdown.png) no-repeat;
-      content: "a";
-      display: block;
-      text-align: center; }
-
-.slider_slides_container {
+.slider_slides {
   position: relative;
   clear: both;
   font-weight: bold;
   color: white; }
-
-.slider_slides {
-  width: 504px;
-  height: 226px; }
-
-.slider_slide {
-  position: absolute;
-  top: 18px;
-  display: none; }
-
-.slider_pic {
-  list-style: none;
-  height: 226px;
-  width: 504px;
-  overflow: hidden; }
+  .slider_slides .slides_container {
+    width: 504px;
+    height: 226px; }
+  .slider_slides .slide {
+    display: none;
+    position: absolute;
+    top: 18px; }
+  .slider_slides .pic {
+    height: 226px;
+    width: 504px;
+    overflow: hidden;
+    list-style: none; }
+  .slider_slides .content {
+    float: left;
+    box-sizing: border-box;
+    height: 53px;
+    width: 451px;
+    border: 1px solid #EEE;
+    border-right: 0;
+    background: white;
+    padding: 9px 0 11px 13px; }
+  .slider_slides .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555; }
+  .slider_slides .description {
+    font-size: 12px;
+    color: #555; }
 
 .slider_paginator {
-  width: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
-
-.slider_paginator_container {
-  text-align: right;
-  letter-spacing: -0.3em; }
-  .slider_paginator_container > * {
-    letter-spacing: normal; }
-
-.slider_index {
-  text-align: center;
-  margin-top: 18px;
-  display: inline-block;
-  line-height: 30px;
-  height: 30px;
-  width: 26px;
-  background-color: #555;
-  color: white;
-  cursor: pointer; }
-  .slider_index:after {
-    content: "";
-    display: block;
-    height: 19px;
-    width: 1px;
-    margin-top: -25px;
-    background-color: #717171; }
-  .slider_index:first-child:after {
-    display: none; }
-  .slider_index.selected {
-    background: #fdcc05;
-    cursor: default; }
-    .slider_index.selected:after {
+  left: 0;
+  width: 100%; }
+  .slider_paginator .paginator_container {
+    letter-spacing: -0.3em;
+    text-align: right; }
+    .slider_paginator .paginator_container > * {
+      letter-spacing: normal; }
+  .slider_paginator .marker {
+    display: inline-block;
+    margin-top: 18px;
+    width: 26px;
+    height: 30px;
+    background-color: #555;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    cursor: pointer; }
+    .slider_paginator .marker:after {
+      content: "";
+      display: block;
+      margin-top: -25px;
+      width: 1px;
+      height: 19px;
+      background-color: #717171; }
+    .slider_paginator .marker:first-child:after {
       display: none; }
-    + .slider_index.selected:after {
-      display: none; }
-
-.slider_content {
-  border: 1px solid #EEE;
-  border-right: 0;
-  padding: 9px 0 11px 13px;
-  box-sizing: border-box;
-  height: 53px;
-  width: 451px;
-  float: left;
-  background: white; }
-
-.slider_content_title {
-  color: #555;
-  font-size: 16px;
-  font-weight: bold; }
-
-.slider_content_description {
-  color: #555;
-  font-size: 12px; }
+    .slider_paginator .marker.selected {
+      background: #fdcc05;
+      cursor: default; }
+      .slider_paginator .marker.selected:after {
+        display: none; }
+      + .slider_paginator .marker.selected:after {
+        display: none; }
 
 .slider_control {
   display: inline-block;
@@ -491,8 +481,8 @@ body {
   width: 51px;
   height: 51px;
   border: 1px solid #EEE;
-  cursor: pointer;
-  background: white url(../img/icons/pause.png) no-repeat center; }
+  background: white url(../img/icons/pause.png) no-repeat center;
+  cursor: pointer; }
   .slider_control.pause {
     background: url(../img/icons/play.png) no-repeat center; }
 

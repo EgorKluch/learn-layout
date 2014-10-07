@@ -2,120 +2,118 @@
   font-size: 12px
   color: #777
 
-.slider_menu_item
-  @extend .disableSelectText
-  display: block
-  float: left
-  min-width: 65px
-  padding: 0 6px
-  height: 28px
-  line-height: 28px
-  text-align: center
-  border: 1px solid #EEE
-  margin-right: 6px
-  cursor: pointer
+  .item
+    @extend .disableSelectText
+    display: block
+    float: left
+    margin-right: 6px
+    min-width: 77px
+    height: 28px
+    border: 1px solid #EEE
+    line-height: 28px
+    text-align: center
+    cursor: pointer
 
-  &:last-child
-    margin-right: 0
+    &:last-child
+      margin-right: 0
 
-  &.selected
-    border-color: #555
-    background-color: #555
-    color: white
-    cursor: default
+    &.selected
+      border-color: #555
+      background-color: #555
+      color: white
+      cursor: default
 
-    &:after
-      height: 11px
-      width: 22px
-      margin: auto
-      background: url(../img/icons/arrowdown.png) no-repeat
-      content: 'a'
-      display: block
-      text-align: center
+      &:after
+        height: 11px
+        width: 22px
+        margin: auto
+        background: url(../img/icons/arrowdown.png) no-repeat
+        content: 'a'
+        display: block
+        text-align: center
 
-
-.slider_slides_container
+.slider_slides
   position: relative
   clear: both
   font-weight: bold
   color: white
 
-.slider_slides
-  width: 504px
-  height: 226px
+  .slides_container
+    width: 504px
+    height: 226px
 
-.slider_slide
-  position: absolute
-  top: 18px
-  display: none
+  .slide
+    display: none
+    position: absolute
+    top: 18px
 
-.slider_pic
-  list-style: none
-  height: 226px
-  width: 504px
-  overflow: hidden
+  .pic
+    height: 226px
+    width: 504px
+    overflow: hidden
+    list-style: none
+
+  .content
+    float: left
+    box-sizing: border-box
+    height: 53px
+    width: 451px
+    border: 1px solid #EEE
+    border-right: 0
+    background: white
+    padding: 9px 0 11px 13px
+
+  .title
+    font-size: 16px
+    font-weight: bold
+    color: #555
+
+  .description
+    font-size: 12px
+    color: #555
 
 .slider_paginator
-  width: 100%
   position: absolute
   top: 0
   left: 0
+  width: 100%
 
-.slider_paginator_container
-  text-align: right
-  @include hideSpaces()
+  .paginator_container
+    @include hideSpaces()
+    text-align: right
 
-.slider_index
-  @extend .disableSelectText
-  text-align: center
-  margin-top: 18px
-  display: inline-block
-  line-height: 30px
-  height: 30px
-  width: 26px
-  background-color: #555
-  color: white
-  cursor: pointer
-
-  &:after
-    content: ''
-    display: block
-    height: 19px
-    width: 1px
-    margin-top: -25px
-    background-color: #717171
-
-  &:first-child:after
-    display: none
-
-  &.selected
-    background: #fdcc05
-    cursor: default
+  .marker
+    @extend .disableSelectText
+    display: inline-block
+    margin-top: 18px
+    width: 26px
+    height: 30px
+    background-color: #555
+    line-height: 30px
+    text-align: center
+    color: white
+    cursor: pointer
 
     &:after
+      content: ''
+      display: block
+      margin-top: -25px
+      width: 1px
+      height: 19px
+      background-color: #717171
+
+    &:first-child:after
       display: none
 
-    + &:after
-      display: none
+    &.selected
+      background: #fdcc05
+      cursor: default
 
-.slider_content
-  border: 1px solid #EEE
-  border-right: 0
-  padding: 9px 0 11px 13px
-  box-sizing: border-box
-  height: 53px
-  width: 451px
-  float: left
-  background: white
+      &:after
+        display: none
 
-.slider_content_title
-  color: #555
-  font-size: 16px
-  font-weight: bold
-
-.slider_content_description
-  color: #555
-  font-size: 12px
+      + &:after
+        display: none
 
 .slider_control
   display: inline-block
@@ -125,9 +123,8 @@
   width: 51px
   height: 51px
   border: 1px solid #EEE
-  cursor: pointer
   background: white url(../img/icons/pause.png) no-repeat center
+  cursor: pointer
 
   &.pause
     background: url(../img/icons/play.png) no-repeat center
-

@@ -7,7 +7,7 @@
 
 $.fn.slider = function (options) {
   var self = this;
-  var $slider = $(options.slider, this);
+  var $slider = $(this);
   var $slides = $(options.slides, $slider);
   var $control = options.control ? $(options.control, this) : null;
   var state = 'play';
@@ -27,6 +27,7 @@ $.fn.slider = function (options) {
         .addClass('selected');
 
       self.selectItem(index);
+      return this;
     },
 
     next: function () {
@@ -35,18 +36,21 @@ $.fn.slider = function (options) {
         .index();
       if (++selectedIndex === $slides.length) selectedIndex = 0;
       self.selectSlide(selectedIndex);
+      return this;
     },
 
     pause: function () {
-      if ('pause' === state) return;
+      if ('pause' === state) return this;
       state = 'pause';
       $control.addClass('pause');
+      return this;
     },
 
     play: function () {
-      if ('play' === state) return;
+      if ('play' === state) return this;
       state = 'play';
       $control.removeClass('pause');
+      return this;
     }
   });
 
@@ -82,4 +86,6 @@ $.fn.slider = function (options) {
 
   this.selectSlide(options.selectedIndex || 0);
   this.play();
+
+  return this;
 };

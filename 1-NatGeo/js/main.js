@@ -8,9 +8,7 @@
 $(document).ready(function () {
   $('#mainMenu').menu();
   $('#subMenu').menu();
-  $('#sliderMenu').menu({
-    items: '.slider_menu_item'
-  });
+  $('#sliderMenu').menu();
   $('#displayModes').menu({
     items: '.news_displayMode'
   });
@@ -18,9 +16,8 @@ $(document).ready(function () {
   $('#search').searchInput();
 
   $('#slider').slider({
-    slider: '.slider_slides',
-    slides: '.slider_slide',
-    markers: '.slider_index',
+    slides: '.slide',
+    markers: '.marker',
     control: '.slider_control',
     nextTime: 5000
   });
