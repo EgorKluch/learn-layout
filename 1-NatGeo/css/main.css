@@ -706,7 +706,8 @@ body {
 .popularNews_item {
   margin-top: 7px;
   width: 224px;
-  height: 148px; }
+  height: 148px;
+  cursor: pointer; }
   .popularNews_item .title,
   .popularNews_item .date {
     width: 135px; }
@@ -722,7 +723,8 @@ body {
   width: 224px;
   height: 111px;
   border: 1px solid #EEE;
-  padding: 4px; }
+  padding: 4px;
+  cursor: pointer; }
   .popularVideos_item .info {
     position: absolute;
     bottom: 0;
@@ -748,7 +750,8 @@ body {
   right: 46px;
   width: 21px;
   height: 100%;
-  background: url(../img/icons/prev.png) no-repeat center; }
+  background: url(../img/icons/prev.png) no-repeat center;
+  cursor: pointer; }
 
 .upcomingEvents_delimiter {
   position: absolute;
@@ -802,6 +805,35 @@ body {
   padding: 5px 0;
   font-size: 11px;
   color: #777; }
+
+.rightButton, .shopping, .subscriptions {
+  margin-top: 14px;
+  box-sizing: border-box;
+  height: 33px;
+  border: 1px solid #EEE;
+  padding: 0 6px 0 39px;
+  text-transform: uppercase;
+  line-height: 31px;
+  font-size: 11px;
+  color: #777; }
+  .rightButton:before, .shopping:before, .subscriptions:before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 6px;
+    right: 7px;
+    width: 1px;
+    height: 19px;
+    background: #EAEAEA;
+    float: left; }
+
+.shopping {
+  float: left;
+  background: white url(../img/icons/shopping.png) no-repeat 6px center; }
+
+.subscriptions {
+  float: right;
+  background: white url(../img/icons/subscriptions.png) no-repeat 6px center; }
 
 .footer {
   background-color: #1F1F1F;
